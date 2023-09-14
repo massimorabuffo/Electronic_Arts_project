@@ -1,0 +1,88 @@
+:root {
+    --clr-primary: #161616;
+    --clr-secondary: #f8554e;
+    --clr-news-tab: #dedede;
+    --clr-singin: #b2b2b2;
+    --clr-ea-nav: #797979;
+    --clr-hover-nav: #f3f3f3;
+    --clr-ea-nav-hover: #9d9d9d;
+    --font-size-mobile: 16px;
+    --font-size-tablet: 18px;
+    --font-size-desktop: 18px;
+    --font-size-h1-mobile: 40px;
+    --font-size-h1-tablet: 44px;
+    --font-size-h1-desktop: 48px;
+    --font-size-h2-mobile: 32px;
+    --font-size-h2-tablet: 36px;
+    --font-size-h2-desktop: 40px;
+    --font-size-h3-mobile: 28px;
+    --font-size-h3-tablet: 32px;
+    --font-size-h3-desktop: 36px;
+    --font-size-h4-mobile: 20px;
+    --font-size-h4-tablet: 24px;
+    --font-size-h4-desktop: 24px;
+    --font-size-h5-mobile: 20px;
+    --font-size-h5-tablet: 24px;
+    --font-size-h5-desktop: 24px;
+    --font-size-h6-mobile: 20px;
+    --font-size-h6-desktop: 24px;
+}
+
+@font-face{
+    font-family: 'Electronic Arts Text';
+    src: url("../assets/fonts/Electronic-Arts-Text.otf");
+}
+
+@font-face{
+    font-family: 'Electronic Arts Text Bold';
+    src: url("../assets/fonts/Electronic-Arts-Text-Bold.otf");
+}
+
+*{
+    font-family: 'Electronic Arts Text';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Electronic Arts Text Bold';
+}
+
+@media screen and (min-width: 1440px){
+    :root{
+        --font-size-desktop: 18px;
+        --font-size-h1-desktop: 48px;
+        --font-size-h2-desktop: 40px;
+        --font-size-h3-desktop: 36px;
+        --font-size-h4-desktop: 24px;
+        --font-size-h5-desktop: 24px;
+        --font-size-h6-desktop: 24px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --font-size-tablet: 18px;
+        --font-size-h1-tablet: 44px;
+        --font-size-h2-tablet: 36px;
+        --font-size-h3-tablet: 32px;
+        --font-size-h4-tablet: 24px;
+        --font-size-h5-tablet: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 425px){
+    :root{
+        --font-size-mobile: 16px;
+        --font-size-h1-mobile: 40px;
+        --font-size-h2-mobile: 32px;
+        --font-size-h3-mobile: 28px;
+        --font-size-h4-mobile: 20px;
+        --font-size-h5-mobile: 20px;
+        --font-size-h6-mobile: 20px;
+    }
+}
