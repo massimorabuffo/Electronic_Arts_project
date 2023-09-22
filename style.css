@@ -18,3 +18,252 @@ nav:hover{
 section{
     padding: 5rem, 1.5rem;
 }
+
+
+/*Christian*/
+
+
+
+
+
+.Christian{
+    margin: 0;
+}
+
+.imgSx{ 
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    top: 0;
+    margin-left: 2rem;
+}
+
+.titolo{
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family:'Electronic Arts Text'; 
+    font-size: 40px;
+    width: 35rem;
+    font-weight: 550;
+}
+
+.paragrafo{
+    color:white;
+    margin: 1.5rem;
+    text-align: center;
+    font-family: 'Electronic Arts Text';
+    font-size: 17px;
+    width: 38rem;
+    line-height: 1.5;
+
+}
+
+
+
+.ciao123{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+    
+ 
+}
+
+
+.bottone{
+    background-color: rgb(52, 199, 101);
+    width:auto;
+    height: 3rem;
+    border: none;
+    border-radius:10cqb;
+    padding: 10px 20px;
+    
+}
+
+.bottone:hover{
+  display: block;
+  transform: scale(1.05);
+}
+
+
+
+
+.fotobella img{
+    width: 100vw;
+}
+
+
+.titolo-2{
+    font-family:'Electronic Arts Text';
+    font-size: 36px;
+   text-align: center;
+}
+
+
+.sezioneImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family:'Electronic Arts Text';
+  }
+  
+  .card29{
+    width: 25vw;
+    height: 25vw;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  }
+
+
+  
+
+  
+  
+  .nome98{
+    font-family: 'Electronic Arts Text';
+    font-size: 1rem;
+    color: rgb(72, 72, 72);
+    text-align: left;
+  margin-top: 2rem;
+  }
+  
+  
+  .card-content27 img:hover{
+    transition: 0.5s;
+    transform: translateY(-40px);
+  
+    }
+
+
+  .card29:nth-child(1){
+
+    background-image : url("https://media.contentapi.ea.com/content/dam/gin/images/2023/09/ufc-5-keyart.jpg.adapt.crop1x1.767p.jpg") ;
+    background-size: 100% 100%;
+    
+  }
+
+  
+  .card29:nth-child(2){
+    background-image : url("https://media.contentapi.ea.com/content/dam/gin/images/2023/07/fc24.jpeg.adapt.crop1x1.767p.jpeg") ;
+    background-size: 100% 100%;
+  }
+
+
+  .card29:nth-child(3){
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2023/02/f123-gametile-16x9.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+  
+  }
+
+  .card29:nth-child(4){
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2022/10/nfs-unbound-1x1.png.adapt.crop1x1.767p.png");
+    background-size: 100% 100%;
+
+  }
+  .card29:nth-child(5){
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+    
+  }
+  .card29:nth-child(6){
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2019/01/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+   
+  }
+
+  
+  .testo-nasc {
+    top: 10.5rem;
+    left: 7.0rem;
+    opacity: 0;
+    transition: opacity 0.7s;
+    color: white;
+    font-size: 15px;
+    font-family:'Electronic Arts Text';
+    font-weight: 600;
+    position: absolute;
+    
+}
+
+
+
+.card29:hover .testo-nasc {
+    opacity: 1;
+    
+}
+
+.card-content27{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content27:hover{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.card-content27 img{
+  justify-content: center;
+  margin-top: 9rem;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+.contenitore{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+ 
+}
+.bottone5{
+  border: 2px solid black;
+  border-radius: 5%;
+  cursor: pointer;
+  width: 10rem;
+  height: 3.5rem;
+  text-decoration: none;
+}
+
+.bottone5:hover{
+  
+  transform: scale(1.04);
+  
+}
+
+.ciao1234{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family:'Electronic Arts Text';
+  font-weight: 600;
+  
+}
+
+
+
+
+.card-content27:hover {
+  transition: background 1.5s; 
+  background: linear-gradient(90deg, rgba(22, 17, 68, 0.8), rgba(194, 12, 12, 0.8)); 
+
+}
+
+/*fine christian*/
