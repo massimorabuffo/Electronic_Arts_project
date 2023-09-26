@@ -18,3 +18,192 @@ nav:hover{
 section{
     padding: 5rem, 1.5rem;
 }
+
+/* Sezione di Massimo */
+
+#massimo-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#play-section{
+    background-image: url(./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop5x2.1455w.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-news-tab);
+    padding: 90px 180px 90px 180px;
+}
+
+#play-section > p{
+    font-size: large;
+    max-width: 530px;
+}
+
+#play-section > button{
+    background-color: transparent;
+    color: var(--clr-news-tab);
+    border: 2px solid var(--clr-news-tab);
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+}
+
+#play-section > button:hover{
+    transition: 0.3s;
+    width: 165px;
+    height: 65px;
+    cursor: pointer;
+}
+
+#play-svg{
+    width: 240px;
+    height: 101px;
+}
+
+#control-section{
+    background-image: url(./assets/images/ea-section-bg-esrb-parents-blue-xl.jpg.adapt.1920w.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 180px 25px 180px;
+    align-items: center;
+}
+
+#control-section > h2{
+    text-align: left;
+    width: 420px;
+}
+
+#control-section > button{
+    background-color: transparent;
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    border-radius: 4px;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+}
+
+#control-section > button:hover{
+    transition: 0.3s;
+    width: 165px;
+    height: 65px;
+    cursor: pointer;
+}
+
+#massimo-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--clr-news-tab);
+    padding: 60px 180px 60px 180px;
+}
+
+#massimo-footer-left{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 740px;
+}
+
+.massimo-footer-links{
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+.massimo-footer-links:hover{
+    color: var(--clr-secondary);
+    transition: 0.2s;
+}
+
+#massimo-footer hr{
+    display: none;
+}
+
+#massimo-footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: small;
+    text-align: right;
+}
+
+#massimo-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#massimo-socials img{
+    width: 22px;
+    height: 22px;
+}
+
+#massimo-socials img:hover{
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1023px){
+    #play-section{
+        padding-left: 60px;
+        background-image: url(./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop2x1.1023w.jpg);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #control-section{
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #massimo-footer{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 20px;
+    }
+    #massimo-footer hr{
+        display: inline;
+    }
+    #massimo-footer-right{
+        text-align: left;
+        font-size: smaller;
+    }
+    #massimo-footer-left{
+        flex-direction: column;
+        max-height: 125px;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #play-section{
+        background-image: url(./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop3x5.767w.jpg);
+        height: 1000px;
+        padding-top: 350px;
+    }
+    #play-section p{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #play-section{
+        height: 800px;
+        padding-top: 260px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #play-section{
+        background-image: url(./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop3x5.320w.jpg);
+        padding-left: 20px;
+    }
+}
