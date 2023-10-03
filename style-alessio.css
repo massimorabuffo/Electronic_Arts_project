@@ -27,6 +27,7 @@ footer{
 }
 
 .container{
+    margin-top: 30rem ;
     display: flex;
 }
 
