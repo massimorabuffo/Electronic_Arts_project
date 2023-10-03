@@ -1,0 +1,237 @@
+@import url("./stili/root.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Electronic Arts Text';
+    font-family: 'Electronic Arts Text';
+    src: url("../assets/fonts/Electronic-Arts-Text.otf");
+}
+
+
+
+.background-color{
+    background:var(--clr-hover-nav);
+    padding: 10px;
+
+}
+
+footer{
+    max-width: 1120px;
+    margin: auto;
+    
+}
+
+.container{
+    display: flex;
+}
+
+
+
+
+.distanze_footer{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-left: 48px;
+    color:  #161616;
+    font-size: 18px;
+}
+
+.distanzaButton{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+ 
+}
+
+.toggle-button{
+    height: 60px;
+    width: 190px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: left;  
+    background-color: var(--ea-light-color); 
+    border-color: #c2c2c2;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+
+.colorButton{
+    color: #5a5a58;
+    font-size: 15px;
+}
+
+.italiaButton{
+    font-size: 14px;
+}
+
+.arrow{
+    margin-left: 90px;
+}
+
+#linguaOptions{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: -28px;
+}
+
+.contenitorColonne{
+    display: flex;
+    background-color:var(--ea-light-color);
+    border-color: #c2c2c2; 
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 14px 20px 0 rgba(0,0,0,.16);
+    max-width: 650px;
+}
+ .colonne{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ }
+
+ .spazio > span{
+    color: #5a5a58;
+}
+
+ .spazio{
+    height: 42px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    width: 145px;
+    transition: transform 0.3s ease; 
+    
+ }
+
+ .spazio:hover {
+    transform: translateX(10px); 
+}
+
+.lineaSpazio{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #b2b2b2;
+    opacity: 0.1;
+    margin-top: 5px;
+}
+
+.spazioQuattro{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    width: 120px;
+    transition: transform 0.3s ease; 
+    color: #5a5a58;
+}
+
+.spazioQuattro:hover{
+    transform: translateX(10px); 
+}
+
+.checked{
+    display: flex;
+    margin-left: auto;
+    /* visibility: hidden; */
+}
+
+
+
+.containerButtonTwo{
+    display: flex;
+    position: relative;
+    margin-left: 3rem;
+}
+
+.regioneArrow{
+    margin-left: 70px;
+}
+
+#regioneOption{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: -28px;
+}
+
+.contenitorColonneRegione{
+    display: flex;
+    background-color:var(--ea-light-color);
+    border-color: #c2c2c2; 
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 14px 20px 0 rgba(0,0,0,.16);
+}
+
+.spazio > img{
+    margin-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conteinerPrivacy{
+    margin-left: 118px;
+    margin-top: 30px;
+}
+
+.politicaPrivacy{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--ea-theme-color);
+    font-size: 16px;
+    margin-right: 32px;
+    margin-bottom: 6px;
+}
+
+.copyright{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoPrivacy{
+    display: inline-block;
+    
+}
+
+
+
+
+
+
+
