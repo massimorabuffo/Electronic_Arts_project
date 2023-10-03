@@ -39,24 +39,20 @@
 
 
 
-// Funzione per gestire il comportamento di apertura/chiusura dei pannelli
+
 function togglePanel(button, content, arrow) {
     const isVisible = content.style.display === "block";
     
-    // Chiudi tutti i pannelli
     document.querySelectorAll(".toggle-content").forEach((panel) => {
         panel.style.display = "none";
     });
 
-    // Ripristina la rotazione dell'indicatore di freccia
     document.querySelectorAll(".toggle-button .arrow").forEach((arrow) => {
         arrow.style.transform = "rotate(0deg)";
     });
 
-    // Inverti la rotazione dell'indicatore di freccia
     arrow.style.transform = isVisible ? "rotate(0deg)" : "rotate(180deg)";
     
-    // Mostra o nascondi il pannello
     content.style.display = isVisible ? "none" : "block";
 }
 
