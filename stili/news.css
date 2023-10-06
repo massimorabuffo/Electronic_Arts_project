@@ -1,0 +1,184 @@
+@import url(./root.css);
+
+button{
+    cursor: pointer;
+}
+.container-news-h3 {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#h3-news{
+    font-size: 32px;
+    
+} 
+.tabs-wrapper{
+    border-bottom: 1px solid rgba(149, 165, 166, 0.6);
+    height: 3.1rem;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs p:hover{
+    border-bottom:2px solid red;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.button-tabs{
+    height: 3.1rem;
+    margin: 0px;
+    padding: 0px 15px;
+    border-right: 1px solid rgba(149, 165, 166, 0.6);
+    border-left: 1px solid rgba(149, 165, 166, 0.6);
+    display: flex;
+    align-items: center;
+}
+.button-tabs:hover{
+    display: flex;
+    align-items: center;
+}
+
+
+.tabs-arrow{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svg-arrow {
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+#button-left{
+    top: 37px;
+    left: -20px;
+}
+#button-right{
+    top: 37px;
+    right: -20px;
+}
+#arrow-left{
+    transform: rotate(90deg);
+}
+#arrow-right{
+    transform: rotate(-90deg);
+}
+
+/* INDICATORE */
+/* .indicator{
+    height: 2px;
+    border: 4px solid red
+} */
+
+/* SECTION CARD */
+
+.tabs-card-wrapper{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tabs-card-container{
+    /* border: 2px solid red ; */
+    gap: 20px;
+    width: 100vw;
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+}
+
+.tabs-card{
+    cursor: pointer;
+    width: 26vw;
+    height: 630px;
+    /* (offset-x, offset-y, blur-radius, color) */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2);
+}
+.tabs-card:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform 0.7s ease 0s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.703);
+    
+}
+
+.tabs-img{
+    /* border: 2px solid blue; */
+    height: 18vw;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-card{
+    padding: 24px;
+}
+
+.h2-card{
+    display: flex;
+    gap: 8px;
+}
+.span-rosso{
+    color: #FF4747;
+    font-size: 14px;
+}
+.span-data{
+    color: black;
+    font-size: 14px;
+}
+
+.h3-card{
+    font-size: 24px;
+    margin: 6px 0px;
+}
+
+.p-card{
+    font-size: 18px;
+    
+}
+
+/* BUTTON: PIU DETTAGLI */
+.details-button-container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#details{
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 12px 24px;
+    width: 140px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
