@@ -2,10 +2,13 @@
     --clr-primary: #161616;
     --clr-secondary: #f8554e;
     --clr-news-tab: #dedede;
-    --clr-singin: #b2b2b2;
+    --clr-signin: #b2b2b2;
     --clr-ea-nav: #797979;
-    --clr-hover-nav: #f3f3f3;
+    --clr-sidebar: #a6a6a6;
+    --clr-hover-nav: #fffffff2;
     --clr-ea-nav-hover: #9d9d9d;
+    --clr-links-nav: #4e4e4e;
+    --clr-show-div-nav: #f3f3f3;
     --font-size-mobile: 16px;
     --font-size-tablet: 18px;
     --font-size-desktop: 18px;

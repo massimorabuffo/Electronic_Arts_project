@@ -1,0 +1,258 @@
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: var(--clr-primary);
+    padding-right: 1rem;
+}
+
+.user li{
+    display: inline;
+    padding: 0 0.95rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-links-nav);
+}
+
+a:hover{
+    color: var(--clr-secondary);
+}
+
+.avatar{
+    background-color: var(--clr-primary);
+    border: none;
+    cursor: pointer;
+}
+
+#avatar{
+    fill: var(--clr-signin);
+    height: 1.438rem;
+    margin-bottom: 0.40rem;
+}
+
+#avatar:hover{
+    fill: var(--clr-hover-nav);
+}
+
+.question{
+    background-color: var(--clr-primary);
+    border: none;
+    cursor: pointer;
+}
+
+#question{
+    height: 1.194rem;
+    fill: var(--clr-signin);
+    margin-bottom: 0.65rem;
+}
+
+#question:hover{
+    fill: var(--clr-hover-nav);
+}
+
+.logo{
+    background-color: var(--clr-primary);
+    border: none;
+    cursor: pointer;
+}
+
+#logo{
+    height: 2.5rem;
+    fill: var(--clr-ea-nav);
+}
+
+#logo:hover{
+    fill: var(--clr-ea-nav-hover);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--clr-primary);
+    padding: 12rem 40rem;
+    color: var(--clr-show-div-nav);
+    transition: fill .7s, transform .3s;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding: 0.75rem 0.75rem;
+}
+
+.ellipsis{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#ellipsis{
+    transform: rotate(-90deg);
+    height: 1.45rem;
+    fill: var(--clr-primary);
+    transition: fill .7s, transform .3s;
+}
+
+#ellipsis:hover{
+    fill: var(--clr-secondary); 
+    transform: rotate(-90deg) scale(1.3);
+  
+}
+
+#ea-nav{
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+.list{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: var(--font-size-desktop);
+    padding: 0 1.2rem;
+}
+
+.list span{
+    padding: 0.65em;
+}
+
+.list span:hover{
+    color: var(--clr-secondary);
+}
+
+#arrow-down{
+    padding-left: .45rem;
+}
+
+.list:hover #arrow-down{
+    fill: var(--clr-secondary);
+    transform: rotate(180deg);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 1;
+    padding: 3rem 4rem;
+    background-color: var(--clr-hover-nav);
+    gap: 100px;
+}
+
+.dropdown-content h4{
+    border-bottom: solid 1px #cccccc;
+    padding: 0 0 5px 0;
+    margin: 0;
+}
+
+.dropdown-content ul{
+    list-style: none;
+}
+
+.dropdown-content li{
+    padding-top: 10px;
+    font-size: var(--font-size-mobile);
+}
+
+.list:hover .dropdown-content{
+    display: flex;
+    border-radius: 7px;
+
+}
+
+#esperienze{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 1;
+    padding: 1rem;
+    background-color: var(--clr-hover-nav);
+}
+
+#esperienze ul{
+    list-style: none;   
+}
+
+#esperienze li{
+    padding-top: 0.95rem;
+    padding-right: 10rem;
+    font-size: var(--font-size-mobile);
+}
+
+.list:hover #esperienze{
+    display: block;
+    border-radius: 7px;
+}
+
+#informazioni{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 1;
+    padding: 1rem 5rem;
+    background-color: var(--clr-hover-nav);
+}
+
+#informazioni ul{
+    list-style: none;
+}
+
+#informazioni li{
+    padding-top: 10px;
+    font-size: var(--font-size-mobile);
+}
+
+.list:hover #informazioni{
+    display: block;
+    border-radius: 7px;
+}
+
+#impegni{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 1;
+    padding: 1rem 5rem;
+    background-color: var(--clr-hover-nav);
+}
+
+#impegni ul{
+    list-style: none;
+}
+
+#impegni li{
+    padding: 10px 0 0 0;
+    font-size: var(--font-size-mobile);
+}
+
+.list:hover #impegni{
+    display: block;
+    border-radius: 7px;
+}
+
+#risorse{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 1;
+    padding: 1rem 3rem;
+    background-color: var(--clr-hover-nav);
+}
+
+#risorse ul{
+    list-style: none;
+}
+
+#risorse li{
+    padding: 10px 0 0 0;
+    font-size: var(--font-size-mobile);
+}
+
+.list:hover #risorse{
+    display: block;
+    border-radius: 7px;
+}
