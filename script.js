@@ -73,3 +73,41 @@ let regioneOptionsVisible = false;
 regioneButton.addEventListener("click", () => {
     togglePanel(regioneButton, regioneOptions, regioneArrow);
 });
+
+
+
+const svgs = document.querySelectorAll(".checked");
+const casella = document.querySelectorAll(".spazio")
+svgs[15].style.display = "inline-block"; 
+
+casella.forEach((spazio) => {
+    spazio.addEventListener("click", () => {
+        
+        svgs.forEach(s => s.style.display = "none");
+        
+        const selectedIndex = parseInt(spazio.getAttribute("data-index"));
+        
+        svgs[selectedIndex].style.display = "inline-block";
+    });
+});
+
+
+
+const svgRegione = document.querySelectorAll(".checkedRegione");
+const casellaRegione = document.querySelectorAll(".spazioRegione");
+
+
+svgRegione[5].style.display = "inline-block";
+
+casellaRegione.forEach((casella, index) => {
+    casella.addEventListener("click", () => {
+    
+        svgRegione.forEach(svg => svg.style.display = "none");
+
+        svgRegione[index].style.display = "inline-block";
+    });
+});
+
+
+
+

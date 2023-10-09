@@ -132,8 +132,8 @@ footer{
     margin-top: 5px;
 }
 
-.spazioQuattro{
-    height: 40px;
+#spazioQuattro{
+    height: 42px;
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -151,6 +151,7 @@ footer{
     display: flex;
     margin-left: auto;
     /* visibility: hidden; */
+    display: none;
 }
 
 
@@ -182,10 +183,34 @@ footer{
     box-shadow: 0 14px 20px 0 rgba(0,0,0,.16);
 }
 
-.spazio > img{
+.spazioRegione{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    width: 160px;
+    transition: transform 0.3s ease; 
+}
+
+.spazioRegione > img{
     margin-right: 3px;
 }
 
+.spazioRegione > span{
+    color: #5a5a58; 
+}
+
+.spazioRegione:hover{
+    transform: translateX(10px);
+}
+
+.checkedRegione{
+    display: flex;
+    margin-left: auto;
+    /* visibility: hidden; */
+    display: none;  
+}
 
 
 
