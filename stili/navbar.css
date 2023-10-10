@@ -182,7 +182,7 @@
 }
 
 #ea_sidebar{
-    block-size: 20rem;
+    block-size: 19rem;
     margin-top: 2rem;
     position: relative;
 }
@@ -204,7 +204,49 @@
 }
 
 .games_grid img{
-    block-size: 9rem;
+    block-size: 8.4rem;
+}
+
+#logo_fifa{
+    position: absolute;
+    block-size: 2rem;
+    top: 55%;
+    left: 19%;
+}
+
+#logo_f1{
+    position: absolute;
+    block-size: 2rem;
+    top: 55%;
+    left: 62%;
+}
+
+#logo_md{
+    position: absolute;
+    block-size: 2rem;
+    top: 73%;
+    left: 18%;
+}
+
+#logo_apex{
+    position: absolute;
+    block-size: 2rem;
+    top: 73%;
+    left: 66%;
+}
+
+#logo_battlefield{
+    position: absolute;
+    block-size: 2rem;
+    top: 93%;
+    left: 13%;
+}
+
+#logo_sims{
+    position: absolute;
+    block-size: 2rem;
+    top: 92%;
+    left: 61%;
 }
 
 .list{
