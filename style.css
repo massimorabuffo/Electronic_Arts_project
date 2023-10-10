@@ -69,7 +69,10 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 180px 25px 180px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 180px;
+    padding-right: 180px;
     
 }
 
@@ -160,11 +163,9 @@ section{
         flex-direction: column;
         gap: 10px;
         max-width: 100vw;
-        padding-right: 60px;
+        padding-right: 0;
+        padding-left: 0;
         align-items: center;
-    }
-    #control-section > h2{
-        text-align: center;
     }
     #massimo-footer{
         flex-direction: column;
@@ -198,8 +199,7 @@ section{
     }
     #control-section{
         font-size: 15px;
-        padding-top: 30px;
-        padding-left: 30px;
+        padding-top: 25px;
     }
 }
 
@@ -215,10 +215,13 @@ section{
         height: 45px;
         font-size: 15px;
     }
+    #control-section > h2 {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     #control-section > button{
         width: 80vw; 
         height: 45px;
-        margin-left: 20px;
         font-size: 15px;
     }
     #massimo-footer{
