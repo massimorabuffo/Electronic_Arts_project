@@ -1,15 +1,27 @@
-const section = document.getElementById("container");
+const avatar = document.getElementById("avatar_section");
+const question = document.getElementById("question_section")
 const sidebar = document.getElementById("sidebar");
 const logoSidebar = document.getElementById("logo_sidebar")
 const logoNav = document.getElementById("logo_nav")
+const questionNav = document.getElementById("question_nav")
 let display = 1;
 
-function showDiv(){
+function showDivAvatar(){
   if(display == 1){
-    section.style.display = 'flex';
+    avatar.style.display = 'flex';
     display = 0;
   }else{
-    section.style.display = 'none';
+    avatar.style.display = 'none';
+    display = 1;
+  }
+}
+
+function showDivQuestion(){
+  if(display == 1){
+    question.style.display = 'flex';
+    display = 0;
+  }else{
+    question.style.display = 'none';
     display = 1;
   }
 }
@@ -31,7 +43,13 @@ function closeSidebar(){
 logoSidebar.addEventListener("click", closeSidebar);
 
 function closeNav(){
-  section.style.display = 'none';
+  avatar.style.display = 'none';
 }
 
-logoNav.addEventListener("click", closeNav)
+logoNav.addEventListener("click", closeNav);
+
+function closeQuestion(){
+  question.style.display= 'none'
+}
+
+questionNav.addEventListener("click", closeQuestion);

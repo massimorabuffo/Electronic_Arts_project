@@ -11,7 +11,7 @@
     <div class="user">
       <ul>
         <li>
-          <button class="avatar" onclick="showDiv()">
+          <button class="avatar" onclick="showDivAvatar()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 18 18"
@@ -27,7 +27,7 @@
           </button>
         </li>
         <li>
-          <button class="question">
+          <button class="question" onclick="showDivQuestion()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 10 17"
@@ -61,7 +61,7 @@
       </ul>
     </div>
 
-    <section  class="container" id="container">
+    <section class="avatar_section" id="avatar_section">
       <div class="logo_nav">
         <svg id="logo_nav" x="0px" y="0px" viewBox="0 0 16 16">
           <path d="M13.4,11.9l-4-4l3.9-3.9c0.6-0.6,0.7-1.3,0.3-1.7c-0.4-0.4-1.2-0.3-1.7,
@@ -72,6 +72,26 @@
       <div class="container_globalnav">
         <a href="" class="a_container"><img src="assets/svg/eaglobalnav-iconsignin.svg" alt="" class="icons"><span>Accedi</span></a>
         <a href="" class="a_container"><img src="assets/svg/eaglobalnav-iconregister.svg" alt="" class="icons"><span>Crea account</span></a>
+      </div>
+    </section>
+
+    <section class="question_section" id="question_section">
+      <div class="logo_nav">
+        <svg id="question_nav" x="0px" y="0px" viewBox="0 0 16 16">
+          <path d="M13.4,11.9l-4-4l3.9-3.9c0.6-0.6,0.7-1.3,0.3-1.7c-0.4-0.4-1.2-0.3-1.7,
+          0.3L8,6.6l-4-4 C3.5,2.1,2.7,1.9,2.3,2.3C1.9,2.7,2.1,3.5,2.6,4.1l4,
+          4l-3.9,3.9c-0.6,0.6-0.7,1.3-0.3,1.7c0.4,0.4,1.2,0.3,1.7-0.3L8,9.4l4,
+          4 c0.6,0.6,1.3,0.7,1.7,0.3C14.1,13.3,13.9,12.5,13.4,11.9z"></path></svg>
+      </div>
+      <div class="question_header">
+        <p><b>Ti serve aiuto?</b></p>
+        <div class="question_body">
+          <a href="" class="link_question"><img src="assets/svg/ea-medallion-white.svg" alt=""><span class="question_text">Verifica il mio accesso EA</span></a>
+          <a href="" class="link_question"><img src="assets/svg/eaglobalnav-iconlink-white.svg" alt=""><span class="question_text">Collegare gli account di una piattaforma al tuo account EA</span></a>
+          <a href="" class="link_question"><img src="assets/svg/ea-medallion-white.svg" alt=""><span class="question_text">Come riscattare un codice</span></a>
+          <a href="" class="link_question"><img src="assets/svg/eaglobalnav-iconalert-white.svg" alt=""><span class="question_text">Non riesco a giocare online</span></a>
+        </div>
+        <p class="question_footer">Non hai trovato ciò che cerchi? Vai su <a href="">Aiuto EA</a> , <a href="">Answers HQ</a>  oder die <a href="">Forum EA</a>.</p>
       </div>
     </section>
 
@@ -99,23 +119,61 @@
             4l-3.9,3.9c-0.6,0.6-0.7,1.3-0.3,1.7c0.4,0.4,1.2,0.3,1.7-0.3L8,9.4l4,
             4 c0.6,0.6,1.3,0.7,1.7,0.3C14.1,13.3,13.9,12.5,13.4,11.9z"></path></svg>
         </div>
+
         <div class="games">
           <img src="assets/images/ea-sidebar.png" alt="" id="ea_sidebar">
           <img src="assets/svg/ea-play-mono-logo-svg.svg" alt="" id="ea_logo">
         </div>
+
         <div class="games_grid">
-          <img src="assets/images/eas-fifa22-sidebar.jpg" alt="">
-          <img src="assets/svg/fifa23-logo-white-stacked.svg" alt="" id="logo_fifa">
-          <img src="assets/images/f122-sidebar.png" alt="">
-          <img src="assets/images/f122-gamebox-logo.png" alt="" id="logo_f1">
-          <img src="assets/images/madden-23-sidebar.jpg" alt="">
-          <img src="assets/svg/m23-gamebox-logo.svg" alt="" id="logo_md">
-          <img src="assets/images/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg" alt="">
-          <img src="assets/svg/apex-legends-mono-logo.svg" alt="" id="logo_apex">
-          <img src="assets/images/battlefield-2042-sidebar.jpg" alt="">
-          <img src="assets/svg/battlefield-2042-mono-logo-svg.svg" alt="" id="logo_battlefield">
-          <img src="assets/images/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg" alt="">
-          <img src="assets/images/the-sims-4-mono-logo.png" alt="" id="logo_sims">
+          <div class="fifa">
+            <a href="" class="link_fifa">
+              <img src="assets/images/eas-fifa22-sidebar.jpg" alt="" id="fifa_img">
+            </a>
+            <div class="fifa_content">
+              <img src="assets/svg/fifa23-logo-white-stacked.svg" alt="" id="logo_fifa">
+            </div>
+          </div>
+          <div class="f1">
+            <a href="" class="link_f1">
+              <img src="assets/images/f122-sidebar.png" alt="" id="f1_img">
+            </a>
+            <div class="f1_content">
+              <img src="assets/images/f122-gamebox-logo.png" alt="" id="logo_f1">
+            </div>
+          </div>
+          <div class="madden23">
+            <a href="" class="link_madden23">
+              <img src="assets/images/madden-23-sidebar.jpg" alt="" id="md_img">
+            </a>
+            <div class="madden23_content">
+              <img src="assets/svg/m23-gamebox-logo.svg" alt="" id="logo_md">
+            </div> 
+          </div>
+          <div class="apex">
+            <a href="" class="link_apex">
+              <img src="assets/images/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg" alt="" id="apex_img">
+            </a>
+            <div class="apex_content">
+              <img src="assets/svg/apex-legends-mono-logo.svg" alt="" id="logo_apex">
+            </div>
+          </div>
+          <div class="battlefield">
+            <a href="" class="link_battlefield">
+              <img src="assets/images/battlefield-2042-sidebar.jpg" alt="" id="battlefield_img">
+            </a>
+            <div class="battlefield_content">
+              <img src="assets/svg/battlefield-2042-mono-logo-svg.svg" alt="" id="logo_battlefield">
+            </div>
+          </div>
+          <div class="sims">
+            <a href="" class="link_sims">
+              <img src="assets/images/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg" alt="" id="sims_img">
+            </a>
+            <div class="sims_content">
+              <img src="assets/images/the-sims-4-mono-logo.png" alt="" id="logo_sims">
+            </div>
+          </div>
         </div>
       </div>
 

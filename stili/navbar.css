@@ -4,6 +4,7 @@
     justify-content: right;
     background-color: var(--clr-primary);
     padding-right: 1rem;
+    width: 100%;
 }
 
 .user li{
@@ -59,16 +60,30 @@
     fill: var(--clr-ea-nav-hover);
 }
 
-.container{
+.avatar_section{
     display: none;
     justify-content: center;
     align-items: center;
     background-color: var(--clr-primary);
-    padding: 10rem 0rem;
+    padding: 11.7rem 0rem;
     overflow: hidden;
     position: absolute;
     z-index: 1;
     width: 100%;
+}
+
+.logo_nav{
+    display: flex;
+    justify-content: right;
+}
+
+#logo_nav{
+    position: absolute;
+    fill: white;
+    block-size: .9rem; 
+    top: 10%;
+    right: 2%;
+    cursor: pointer;
 }
 
 .container_globalnav{
@@ -86,12 +101,28 @@
     width: 10rem;
 }
 
-.logo_nav{
+.icons{
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    block-size: 36px;
+    padding-left: 4rem;
 }
 
-#logo_nav{
+.question_section{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary);
+    padding: 4.6rem 0rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+#question_nav{
     position: absolute;
     fill: white;
     block-size: .9rem; 
@@ -100,13 +131,47 @@
     cursor: pointer;
 }
 
-.icons{
+.question_header{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.question_body{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 640px;
+    margin: 16px auto;
+}
+
+.link_question{
+    display: flex;
     justify-content: center;
     align-items: center;
-    block-size: 36px;
-    padding-left: 4rem;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 16px 30px 16px 16px;
+}
+
+.link_question img{
+    width: 36px;
+}
+
+.question_text{
+    color: white;
+    text-align: center;
+    width: 264px;
+    font-size: 17px;
+}
+
+.question_footer{
+    font-size: 15px;
+}
+
+.question_footer a{
+    text-decoration: none;
+    color: var(--clr-links-hidden-section);
 }
 
 .wrapper{
@@ -198,7 +263,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 2rem;
+    grid-column-gap: 2.125rem;
     grid-row-gap: 1.875rem;
     margin-top: 1.25rem;
 }
@@ -207,46 +272,183 @@
     block-size: 8.4rem;
 }
 
-#logo_fifa{
+.fifa{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.link_fifa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fifa_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.f1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.link_f1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.f1_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.madden23{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.link_madden23{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.madden23_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.apex{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.link_apex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.apex_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.battlefield{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.link_battlefield{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.battlefield_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.sims{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.link_sims{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.sims_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#logo_fifa{
     block-size: 2rem;
-    top: 55%;
-    left: 19%;
 }
 
 #logo_f1{
-    position: absolute;
     block-size: 2rem;
-    top: 55%;
-    left: 62%;
 }
 
 #logo_md{
-    position: absolute;
     block-size: 2rem;
-    top: 73%;
-    left: 18%;
 }
 
 #logo_apex{
-    position: absolute;
     block-size: 2rem;
-    top: 73%;
-    left: 66%;
 }
 
 #logo_battlefield{
-    position: absolute;
-    block-size: 2rem;
-    top: 93%;
-    left: 13%;
+    block-size: 1.5rem;
 }
 
 #logo_sims{
-    position: absolute;
     block-size: 2rem;
-    top: 92%;
-    left: 61%;
 }
 
 .list{
