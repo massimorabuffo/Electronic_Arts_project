@@ -459,8 +459,12 @@
     padding: 0 1.2rem;
 }
 
+.list:hover{
+    color: var(--clr-secondary);
+}
+
 .list span{
-    padding: 0.65em;
+    padding: 0.65rem;
 }
 
 .list span:hover{
@@ -490,15 +494,25 @@
     position: absolute;
     border: 1px solid black;
     z-index: 1;
-    padding: 3rem 4rem;
+    padding: 3rem 4rem 4rem 2rem;
     background-color: var(--clr-hover-nav);
     gap: 100px;
 }
 
-.dropdown-content h4{
+.esplora-giochi h4{
+    color: var(--clr-primary);
     border-bottom: solid 1px #cccccc;
-    padding: 0 0 5px 0;
+    padding: 0 50px 5px 0;
     margin: 0;
+    font-size: 15px;
+}
+
+.piattaforme h4{
+    color: var(--clr-primary);
+    border-bottom: solid 1px #cccccc;
+    padding: 0 20px 5px 0;
+    margin: 0;
+    font-size: 15px;
 }
 
 .dropdown-content ul{
@@ -521,17 +535,16 @@
     position: absolute;
     border: 1px solid black;
     z-index: 1;
-    padding: 1rem;
+    padding: 1rem 11rem 1rem 2rem;
     background-color: var(--clr-hover-nav);
 }
 
 #esperienze ul{
-    list-style: none;   
+    list-style: none;
 }
 
 #esperienze li{
-    padding-top: 0.95rem;
-    padding-right: 10rem;
+    padding-top: 0.75rem;
     font-size: 15px;
 }
 
@@ -545,7 +558,7 @@
     position: absolute;
     border: 1px solid black;
     z-index: 1;
-    padding: 1rem;
+    padding: 1rem 8rem 2rem 2rem;
     background-color: var(--clr-hover-nav);
 }
 
@@ -559,7 +572,7 @@
 }
 
 .list:hover #informazioni{
-    display: block;
+    display: flex;
     border-radius: 7px;
 }
 
@@ -600,7 +613,7 @@
 }
 
 #risorse li{
-    padding: 10px 0 0 0;
+    padding: 10px 70px 0 0;
     font-size: 15px;
 }
 
