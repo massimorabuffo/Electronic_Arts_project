@@ -17,10 +17,10 @@ button {
 .tabs-wrapper {
     border-bottom: 1px solid rgba(149, 165, 166, 0.6);
     position: relative;
-    
+
 }
 
-.tabs-container{
+.tabs-container {
     display: flex;
     justify-content: center;
 }
@@ -104,9 +104,11 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    display: none;
     /* display: grid;
     grid-template-columns: repeat(3, 1fr); */
 }
+
 
 .tabs-card {
     cursor: pointer;
@@ -201,14 +203,14 @@ img {
     /* Da boxare */
     .tabs-wrapper {
         border-bottom: 1px solid rgba(149, 165, 166, 0.6);
-        
+
     }
 
     /* .tabs-container {
     
     } */
 
-    .tabs{
+    .tabs {
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
@@ -250,12 +252,12 @@ img {
     }
 
     .tabs-card-container {
-        
+
         gap: 20px;
         width: 90%;
         margin-top: 56px;
         display: flex;
-        
+
     }
 
     .tabs-card {
