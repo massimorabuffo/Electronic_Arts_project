@@ -4,7 +4,8 @@ const sidebar = document.getElementById("sidebar");
 const logoSidebar = document.getElementById("logo_sidebar")
 const logoNav = document.getElementById("logo_nav")
 const questionNav = document.getElementById("question_nav")
-const hamburger = document.getElementById("hamburger")
+const hamburger = document.getElementById("hamburger-section");
+const logoHamburger = document.getElementById("close-side")
 
 function showDivAvatar(){
     avatar.style.display = 'flex';
@@ -22,10 +23,10 @@ function showSidebar(){
     document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
 }
 
-function sidebarTablet(){
-    hamburger.style.width = '24rem'
-    hamburger.style.backgroundColor = 'rgba(0,0,0,0.4)'
-    document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+function showSidebarTablet(){
+  hamburger.style.display = 'flex'
+  hamburger.style.width =  '24rem'
+  document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
 }
 
 function closeSidebar(){
@@ -48,8 +49,8 @@ function closeQuestion(){
 questionNav.addEventListener("click", closeQuestion);
 
 function closeSidebarTablet(){
-  hamburger.style.width = '24rem'
-  hamburger.style.backgroundColor = 'rgba(0,0,0,0.4)'
+  hamburger.style.width =  '0'
+  document.body.style.backgroundColor = 'white';
 }
 
-hamburger.addEventListener('click', closeSidebarTablet)
+logoHamburger.addEventListener('click', closeSidebarTablet)
