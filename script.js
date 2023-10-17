@@ -53,20 +53,20 @@ const tabsCardContainerF1 = document.getElementsByClassName('F1')
 const tabsCardContainerBattlefield = document.getElementsByClassName('Battlefield')
 const tabsCardContainerNeedForSpeed = document.getElementsByClassName('NeedForSpeed')
 
-let displayButton = false
-const buttonTabs = document.querySelectorAll('.button-tabs')
+// let displayButton = false
+// const buttonTabs = document.querySelectorAll('.button-tabs')
 
-buttonTabs.forEach((button) => {
-    console.log(button)
-    button.addEventListener('click', function() {
-        const tabsCardContainer = document.getElementsByClassName('tabs-card-container')
-        if (displayButton === true) {
-            tabsCardContainer.style.display = 'flex'
-        } else {
-            tabsCardContainer.style.display = 'none'
-        }
-    })
-})
+// buttonTabs.forEach((button) => {
+//     console.log(button)
+//     button.addEventListener('click', function() {
+//         const tabsCardContainer = document.getElementsByClassName('tabs-card-container')
+//         if (displayButton === true) {
+//             tabsCardContainer.style.display = 'flex'
+//         } else {
+//             tabsCardContainer.style.display = 'none'
+//         }
+//     })
+// })
 // function showCardEAFC() {
 //     if (displayButton === true) {
 //         tabsCardContainerEAFC.style.display = 'flex'
