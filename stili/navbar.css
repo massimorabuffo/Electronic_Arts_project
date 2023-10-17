@@ -10,6 +10,8 @@
 .user li{
     display: inline;
     padding: 0 0.95rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
 
@@ -65,9 +67,10 @@
     justify-content: center;
     align-items: center;
     background-color: var(--clr-primary);
-    padding: 11.7rem 0rem;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 70px 100px -58px rgba(0,0,0,0.3);
+    transition: .5s cubic-bezier(.5,.25,.015,1);
     z-index: 1;
     width: 100%;
 }
@@ -115,9 +118,10 @@
     justify-content: center;
     align-items: center;
     background-color: var(--clr-primary);
-    padding: 4.6rem 0rem;
     overflow: hidden;
     position: absolute;
+    box-shadow: 0px 70px 100px -58px rgba(0,0,0,0.3);
+    transition: .5s cubic-bezier(.5,.25,.015,1);
     z-index: 1;
     width: 100%;
 }
@@ -207,23 +211,26 @@
 }
 
 .sidebar{
-    display: none;
-    height: 95.2%;
-    width: 24rem;
+    height: 100%;
+    width: 0;
     position: fixed;
     z-index: 1;
     left: 0;
     bottom: 0;
+    transition: .5s cubic-bezier(.5,.25,.015,1);
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
     background-color: var(--clr-show-div-nav);
     overflow-x: hidden;
-    padding-top: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
 }
 
 .sidebar_text{
     display: flex;
     justify-content: space-between;
+    padding: 5.5rem 1rem 2rem 2.7rem;
 }
 
 .sidebar_text span{
@@ -239,6 +246,7 @@
 
 .logo_sidebar{
     block-size: 1rem;
+    padding: 0 2.9rem 0 0; 
 }
 
 .logo_sidebar:hover{
@@ -247,25 +255,31 @@
 }
 
 #ea_sidebar{
-    block-size: 19rem;
-    margin-top: 2rem;
+    block-size: 19.938rem;
     position: relative;
 }
 
 #ea_logo{
     position: absolute;
-    top: 25%;
+    top: 28%;
     left: 40%;
     block-size: 5rem;
+}
+
+.games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 0 ;
 }
 
 .games_grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 2.125rem;
     grid-row-gap: 1.875rem;
-    margin-top: 1.25rem;
+    margin-top: 2rem;
+    padding: 0 2rem 3rem 1.1rem;
 }
 
 .games_grid img{
@@ -273,7 +287,7 @@
 }
 
 .fifa{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -284,8 +298,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
-    top: 0;
 }
 
 .fifa_content{
@@ -296,10 +308,18 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    -webkit-transition: -webkit-transform .3;
+    transition: tranform .3;
+}
+
+.fifa_content img#logo_fifa{
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .f1{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -310,7 +330,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
     top: 0;
 }
 
@@ -325,7 +344,7 @@
 }
 
 .madden23{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -336,7 +355,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
     top: 0;
 }
 
@@ -351,7 +369,7 @@
 }
 
 .apex{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -362,7 +380,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
     top: 0;
 }
 
@@ -377,7 +394,7 @@
 }
 
 .battlefield{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -388,7 +405,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 0;
     top: 0;
 }
 
@@ -453,7 +469,7 @@
 
 .list{
     position: relative;
-    display: inline-block;
+    display: flex;
     cursor: pointer;
     font-size: var(--font-size-desktop);
     padding: 0 1.2rem;
@@ -480,21 +496,31 @@
     color: var(--clr-secondary);
 }
 
+.arrow-down{
+    margin-top: .55rem;
+}
+
 #arrow-down{
     padding-left: .45rem;
+    transition: all .2s;
+    transform: rotate(0);
 }
 
 .list:hover #arrow-down{
     fill: var(--clr-secondary);
-    transform: rotate(180deg);
+    transform: rotateX(180deg);
 }
 
 .dropdown-content{
-    display: none;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: height .5s cubic-bezier(1, 0, 0.1, 1) 0s;
     position: absolute;
     border: 1px solid black;
     z-index: 1;
     padding: 3rem 4rem 4rem 2rem;
+    margin-top: 2.8rem;
     background-color: var(--clr-hover-nav);
     gap: 100px;
 }
@@ -502,15 +528,16 @@
 .esplora-giochi h4{
     color: var(--clr-primary);
     border-bottom: solid 1px #cccccc;
-    padding: 0 50px 5px 0;
+    padding: 0 0px 5px 0;
     margin: 0;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .piattaforme h4{
     color: var(--clr-primary);
     border-bottom: solid 1px #cccccc;
-    padding: 0 20px 5px 0;
+    padding: 0 0 5px 0;
     margin: 0;
     font-size: 15px;
 }
@@ -526,17 +553,24 @@
 
 .list:hover .dropdown-content{
     display: flex;
+    width: 460px;
+    height: 330px;
     border-radius: 7px;
-
+    visibility: visible;
 }
 
 #esperienze{
-    display: none;
+    visibility: hidden;
+    height: 0;
     position: absolute;
     border: 1px solid black;
+    overflow: hidden;
     z-index: 1;
-    padding: 1rem 11rem 1rem 2rem;
+    transition: height .3s cubic-bezier(1, 0, 0.1, 1) 0s;
+    padding: 1rem 3rem 1rem 2rem;
     background-color: var(--clr-hover-nav);
+    margin-top: 2.8rem;
+    
 }
 
 #esperienze ul{
@@ -546,19 +580,25 @@
 #esperienze li{
     padding-top: 0.75rem;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .list:hover #esperienze{
-    display: block;
+    visibility: visible;
+    height: 200px;
     border-radius: 7px;
 }
 
 #informazioni{
-    display: none;
+    visibility: hidden;
+    height: 0;
     position: absolute;
     border: 1px solid black;
+    transition: height .3s cubic-bezier(1, 0, 0.1, 1) 0s;
+    overflow: hidden;
     z-index: 1;
-    padding: 1rem 8rem 2rem 2rem;
+    padding: 1rem 3rem 2rem 2rem;
+    margin-top: 2.8rem;
     background-color: var(--clr-hover-nav);
 }
 
@@ -569,19 +609,25 @@
 #informazioni li{
     padding-top: 10px;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .list:hover #informazioni{
-    display: flex;
+    visibility: visible;
+    height: 250px;
     border-radius: 7px;
 }
 
 #impegni{
-    display: none;
+    visibility: hidden;
     position: absolute;
     border: 1px solid black;
     z-index: 1;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    transition: height .3s cubic-bezier(1, 0, 0.1, 1) 0s;
+    overflow: hidden;
+    height: 0;
+    margin-top: 2.8rem;
     background-color: var(--clr-hover-nav);
 }
 
@@ -592,19 +638,25 @@
 #impegni li{
     padding: 10px 0 0 0;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .list:hover #impegni{
-    display: block;
+    visibility: visible;
+    height: 220px;
     border-radius: 7px;
 }
 
 #risorse{
-    display: none;
+    visibility: hidden;
     position: absolute;
     border: 1px solid black;
+    transition: height .3s cubic-bezier(.5,.25,.015,1) .1s;
+    overflow: hidden;
+    height: 0;
     z-index: 1;
-    padding: 1rem;
+    padding: 1rem 3rem 1rem 2rem;
+    margin-top: 2.8rem;
     background-color: var(--clr-hover-nav);
 }
 
@@ -613,11 +665,68 @@
 }
 
 #risorse li{
-    padding: 10px 70px 0 0;
+    padding: 10px 0 0 0;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .list:hover #risorse{
-    display: block;
+    visibility: visible;
+    height: 220px;
     border-radius: 7px;
+}
+
+.hamburger{
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .wrapper{
+        position: relative;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .ellipsis{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 1.5%;
+        border: none;
+        cursor: pointer;
+    }
+
+    #hamburger-sidebar{
+        position: absolute;
+        block-size: 18px;
+        fill: var(--clr-primary);
+    }
+
+    #hamburger-sidebar:hover{
+        fill: var(--clr-secondary);
+    }
+
+    .container_globalnav{
+        flex-wrap: nowrap;
+    }
+
+    .question_body{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 640px;
+    }
+
+    .link_question{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
 }

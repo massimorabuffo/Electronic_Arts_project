@@ -4,52 +4,52 @@ const sidebar = document.getElementById("sidebar");
 const logoSidebar = document.getElementById("logo_sidebar")
 const logoNav = document.getElementById("logo_nav")
 const questionNav = document.getElementById("question_nav")
-let display = 1;
+const hamburger = document.getElementById("hamburger")
 
 function showDivAvatar(){
-  if(display == 1){
     avatar.style.display = 'flex';
-    display = 0;
-  }else{
-    avatar.style.display = 'none';
-    display = 1;
+    avatar.style.height = '24rem';
   }
-}
 
 function showDivQuestion(){
-  if(display == 1){
     question.style.display = 'flex';
-    display = 0;
-  }else{
-    question.style.display = 'none';
-    display = 1;
+    question.style.height = '24rem';
   }
-}
 
 function showSidebar(){
-  if(display == 1){
     sidebar.style.display = 'block';
-    display = 0;
-  }else{
-    sidebar.style.display = 'none';
-    display = 1;
-  }
+    sidebar.style.width = '26.5rem';
+    document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+}
+
+function sidebarTablet(){
+    hamburger.style.width = '24rem'
+    hamburger.style.backgroundColor = 'rgba(0,0,0,0.4)'
+    document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
 }
 
 function closeSidebar(){
-  sidebar.style.display = 'none';
+  sidebar.style.width = '0';
+  document.body.style.backgroundColor = 'white'
 }
 
 logoSidebar.addEventListener("click", closeSidebar);
 
-function closeNav(){
-  avatar.style.display = 'none';
+function closeAvatar(){
+  avatar.style.height = '0';
 }
 
-logoNav.addEventListener("click", closeNav);
+logoNav.addEventListener("click", closeAvatar);
 
 function closeQuestion(){
-  question.style.display= 'none'
+  question.style.height = '0';
 }
 
 questionNav.addEventListener("click", closeQuestion);
+
+function closeSidebarTablet(){
+  hamburger.style.width = '24rem'
+  hamburger.style.backgroundColor = 'rgba(0,0,0,0.4)'
+}
+
+hamburger.addEventListener('click', closeSidebarTablet)
