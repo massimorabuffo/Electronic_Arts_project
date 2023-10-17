@@ -44,86 +44,65 @@ window.addEventListener("load", initSlider);
 // const buttonBattlefield = document.getElementById('Battlefield')
 // const buttonNeedForSpeed = document.getElementById('NeedForSpeed')
 // //Riferimento dei tabs-card-container
-const tabsCardContainerEA = document.getElementsByClassName('EA')
-const tabsCardContainerEAFC = document.getElementsByClassName('EA-Sports')
-const tabsCardContainerApex = document.getElementsByClassName('apex')
-const tabsCardContainerSims = document.getElementsByClassName('thesims')
-const tabsCardContainerStarWars = document.getElementsByClassName('StarWars')
-const tabsCardContainerF1 = document.getElementsByClassName('F1')
-const tabsCardContainerBattlefield = document.getElementsByClassName('Battlefield')
-const tabsCardContainerNeedForSpeed = document.getElementsByClassName('NeedForSpeed')
+// const tabsCardContainerEA = document.getElementsById('EA123')
+// const tabsCardContainerEAFC = document.getElementsById('EA-Sports')
+// const tabsCardContainerApex = document.getElementsById('apex')
+// const tabsCardContainerSims = document.getElementsById('thesims')
+// const tabsCardContainerStarWars = document.getElementsById('StarWars')
+// const tabsCardContainerF1 = document.getElementsById('F1')
+// const tabsCardContainerBattlefield = document.getElementsById('Battlefield')
+// const tabsCardContainerNeedForSpeed = document.getElementsById('NeedForSpeed')
 
-// let displayButton = false
-// const buttonTabs = document.querySelectorAll('.button-tabs')
+// function showCardEA(){
+//     tabsCardContainerEA.style.display = 'flex'
+// }
 
-// buttonTabs.forEach((button) => {
-//     console.log(button)
-//     button.addEventListener('click', function() {
-//         const tabsCardContainer = document.getElementsByClassName('tabs-card-container')
-//         if (displayButton === true) {
-//             tabsCardContainer.style.display = 'flex'
-//         } else {
-//             tabsCardContainer.style.display = 'none'
-//         }
+
+function mostraCard(id) {
+    chiudiCard();
+
+    const cardDaMostrare = document.getElementById(id);
+    if (cardDaMostrare) {
+        cardDaMostrare.style.display = 'flex';
+    }
+}
+
+function chiudiCard() {
+    const cards = document.querySelectorAll('.tabs-card-container');
+    cards.forEach(card => {
+        card.style.display = 'none';
+    });
+}
+
+
+
+
+
+
+
+// function mostraCard(id) {
+//     chiudiCard();
+
+//     let cards = document.querySelectorAll('.tabsCardContainer')
+//     for (let i = 0; i < cards.length; i++) {
+//         cards[i].style.display = 'none';
+//     }
+    
+//     const cardDaAprire = cards.filter((el)=>{
+//         console.log(el)
 //     })
-// })
-// function showCardEAFC() {
-//     if (displayButton === true) {
-//         tabsCardContainerEAFC.style.display = 'flex'
-//     } else {
-//         tabsCardContainerEAFC.style.display = 'none'
+    
+//     let cardDaMostrare = document.getElementById(id);
+//     if (cardDaMostrare) {
+//         cardDaMostrare.style.display = 'flex';
 //     }
+
 // }
-// function showCardApex() {
-//     if (displayButton === true) {
-//         tabsCardContainerApex.style.display = 'flex'
-//     } else {
-//         tabsCardContainerApex.style.display = 'none'
-//     }
-// }
-// function showCardSims() {
-//     if (displayButton === true) {
-//         tabsCardContainerSims.style.display = 'flex'
-//     } else {
-//         tabsCardContainerSims.style.display = 'none'
-//     }
-// }
-// function showCardStarWars() {
-//     if (displayButton === true) {
-//         tabsCardContainerStarWars.style.display = 'flex'
-//     } else {
-//         tabsCardContainerStarWars.style.display = 'none'
-//     }
-// }
-// function showCardF1() {
-//     if (displayButton === true) {
-//         tabsCardContainerF1.style.display = 'flex'
-//     } else {
-//         tabsCardContainerF1.style.display = 'none'
-//     }
-// }
-// function showCardBattlefield() {
-//     if (displayButton === true) {
-//         tabsCardContainerBattlefield.style.display = 'flex'
-//     } else {
-//         tabsCardContainerBattlefield.style.display = 'none'
-//     }
-// }
-// function showCardNeedForSpeed() {
-//     if (displayButton === true) {
-//         tabsCardContainerNeedForSpeed.style.display = 'flex'
-//     } else {
-//         tabsCardContainerNeedForSpeed.style.display = 'none'
+
+// function chiudiCard() {
+//     let cards = document.querySelectorAll('.tabsCardContainer')
+//     for (let i = 0; i < cards.length; i++) {
+//         cards[i].style.display = 'none';
 //     }
 // }
 
-
-// buttonEA.addEventListener('click', function showCardEA() {
-//     if (displayButton === true) {
-//         tabsCardContainer.style.display = 'flex'
-//         displayButton = false
-//     } else {
-//         tabsCardContainer.style.display = 'none'
-//         displayButton = true
-//     }
-// })

@@ -89,7 +89,6 @@ button {
 /* SECTION CARD */
 
 .tabs-card-wrapper {
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +102,7 @@ button {
     width: 100vw;
     margin-top: 56px;
     margin-bottom: 15px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     /* display: none; */
@@ -354,7 +353,9 @@ img {
         overflow-x: auto;
         white-space: nowrap;
         justify-content: start;
-        
+    }
+    .tabs::-webkit-scrollbar{
+        display: none;
     }
     .tabs-card {
         cursor: pointer;
