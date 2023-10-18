@@ -5,8 +5,7 @@
   
   footer {
       background: var(--clr-hover-nav);
-      padding: 10px;
-      margin-top: 30rem;
+      padding: 30px;
   }
   
   .containerFooter {
@@ -68,6 +67,7 @@
   }
   
   #linguaOptions {
+    background-color: white;
     display: none;
     position: absolute;
     bottom: 100%;
@@ -151,6 +151,7 @@
   }
   
   #regioneOption {
+    background-color: white;
     display: none;
     position: absolute;
     bottom: 100%;
