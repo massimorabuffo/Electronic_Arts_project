@@ -1,4 +1,5 @@
 @import url("./stili/root.css");
+@import url("./stili/navbar.css");
 
 *{
     padding: 0;
@@ -9,10 +10,6 @@
 body{
     font-family: 'Electronic Arts Text';
     color: var(--clr-primary)
-}
-
-nav:hover{
-    color: var(--clr-secondary);
 }
 
 section{
