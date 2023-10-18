@@ -1,6 +1,8 @@
 
 @import url("./stili/root.css");
 @import url("./stili/navbar.css");
+@import url("./stili/news.css");
+@import url("./stili/footer.css");
 
 *{
     padding: 0;
