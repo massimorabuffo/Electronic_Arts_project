@@ -1,22 +1,31 @@
+
 @import url("./stili/root.css");
+@import url("./stili/navbar.css");
+@import url("./stili/play-section.css");
+@import url("./stili/news.css");
+@import url("./stili/footer.css");
 @import url("./stili/header-giochi.css");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: 'Electronic Arts Text';
-  color: var(--clr-primary)
+body{
+    font-family: 'Electronic Arts Text';
+    color: var(--clr-primary)
 }
 
-nav:hover {
-  color: var(--clr-secondary);
+section{
+    padding: 5rem, 1.5rem;
 }
 
-section {
-  padding: 5rem, 1.5rem;
+#control-section{
+    background-image: url(./assets/images/ea-section-bg-esrb-parents-blue-xl.jpg.adapt.1920w.jpg);
+}
+
+#play-section{
+    background-image: url(./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop5x2.1455w.jpg);
 }
 
