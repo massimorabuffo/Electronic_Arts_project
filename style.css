@@ -1,12 +1,18 @@
+
 @import url("./stili/root.css");
+@import url("./stili/navbar.css");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: "Electronic Arts Text";
+body{
+    font-family: 'Electronic Arts Text';
+    color: var(--clr-primary)
 }
 
+section{
+    padding: 5rem, 1.5rem;
+}
