@@ -1,19 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Document</title>
+    <title>Home Page Electronic Arts - Sito EA ufficiale</title>
 </head>
 <body>
-
     <!-- Marco -->
-    <nav>
-    
-    </nav>
-
+    <div class="user">
+        <ul>
+          <li>
+            <button class="avatar" onclick="showDivAvatar()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 18"
+                id="avatar">
+                <g>
+                  <path
+                    d="M7.5,9A4.5,4.5,0,1,0,3,4.5,4.5,4.5,0,0,0,7.5,9Zm0-7A2.5,2.5,0,1,1,5,4.5,2.5,2.5,0,0,1,7.5,2Z"></path>
+                  <path
+                    d="M8,10.028s-0.254-.007-0.506-0.007S7,10.023,7,10.028c-7.033.283-7,3.558-7,6.972H15C15,13.586,14.985,10.312,8,10.028ZM8,15H2.056c0.2-1.946,
+                    1.077-2.815,5.024-2.974l0.1,0H7.494l0.326,0,0.1,0c3.928,0.16,4.819,1.03,5.022,2.974H8Z"></path>
+                </g>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="question" onclick="showDivQuestion()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 10 17"
+                id="question">
+                <path
+                  d="M5.193,0C0.538,0,0,2.673,0,4.684a0.978,0.978,0,0,0,1.955,0c0-1.648.225-2.729,3.238-2.729,2.852,0,2.852,1.45,2.852,2.729a1.951,
+                  1.951,0,0,1-1.29,1.675l-0.216.083C4.8,7.108,3.809,7.531,3.809,8.472v3.5a0.978,0.978,0,1,0,1.955,0V8.887c0.4-.209,1.152-0.5,
+                  1.474-0.62l0.224-.085A3.831,3.831,0,0,0,10,4.684C10,3.526,10,0,5.193,0Z"></path>
+                <path
+                  d="M5.366,14.943H3.982a1.029,1.029,0,0,0,0,2.057H5.366A1.029,1.029,0,1,0,5.366,14.943Z"></path>
+              </svg>
+            </button>
+            
+          </li>
+          <li>
+            <button class="logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                id="logo">
+                <g>
+                  <path
+                    d="M19.766,8.372L6.927,8.392l-2.093,3.337l12.818-0.004L19.766,8.372 M14.221,20.518c-0.151,0-7.604,0.016-8.114,0.016 c0.249-0.393,1.665-2.611,
+                    1.738-2.733c0.163,0,5.014,0,5.271,0l2.122-3.354L3.117,14.467l-2.114,3.342l2.827-0.005L0,23.874h16.151 c0.286-0.453,5.654-9.017,5.904-9.412c0.219,
+                    0.334,1.664,2.623,1.9,3.002c-0.363,0-1.682,0-1.682,0l-2.101,3.337 c0,0,0.009,0,0.029,0c0.428,0,5.719,0,5.875,0c0.085,0.135,1.827,2.876,1.921,
+                    3.023H32L22.038,8.127 C21.646,8.738,14.311,20.374,14.221,20.518"></path>
+                </g>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+  
+      <section class="avatar_section" id="avatar_section">
+        <div class="logo_nav">
+          <svg id="logo_nav" x="0px" y="0px" viewBox="0 0 16 16">
+            <path d="M13.4,11.9l-4-4l3.9-3.9c0.6-0.6,0.7-1.3,0.3-1.7c-0.4-0.4-1.2-0.3-1.7,
+            0.3L8,6.6l-4-4 C3.5,2.1,2.7,1.9,2.3,2.3C1.9,2.7,2.1,3.5,2.6,4.1l4,
+            4l-3.9,3.9c-0.6,0.6-0.7,1.3-0.3,1.7c0.4,0.4,1.2,0.3,1.7-0.3L8,9.4l4,
+            4 c0.6,0.6,1.3,0.7,1.7,0.3C14.1,13.3,13.9,12.5,13.4,11.9z"></path></svg>
+        </div>
+        <div class="container_globalnav">
+          <a href="" class="a_container"><img src="assets/svg/eaglobalnav-iconsignin.svg" alt="" class="icons"><span>Accedi</span></a>
+          <a href="" class="a_container"><img src="assets/svg/eaglobalnav-iconregister.svg" alt="" class="icons"><span>Crea account</span></a>
+        </div>
+      </section>
+  
+      <section class="question_section" id="question_section">
+        <div class="logo_nav">
+          <svg id="question_nav" x="0px" y="0px" viewBox="0 0 16 16">
+            <path d="M13.4,11.9l-4-4l3.9-3.9c0.6-0.6,0.7-1.3,0.3-1.7c-0.4-0.4-1.2-0.3-1.7,
+            0.3L8,6.6l-4-4 C3.5,2.1,2.7,1.9,2.3,2.3C1.9,2.7,2.1,3.5,2.6,4.1l4,
+            4l-3.9,3.9c-0.6,0.6-0.7,1.3-0.3,1.7c0.4,0.4,1.2,0.3,1.7-0.3L8,9.4l4,
+            4 c0.6,0.6,1.3,0.7,1.7,0.3C14.1,13.3,13.9,12.5,13.4,11.9z"></path></svg>
+        </div>
+        <div class="question_header">
+          <p><b>Ti serve aiuto?</b></p>
+          <div class="question_body">
+            <a href="" class="link_question"><img src="assets/svg/ea-medallion-white.svg" alt=""><span class="question_text">Verifica il mio accesso EA</span></a>
+            <a href="" class="link_question"><img src="assets/svg/eaglobalnav-iconlink-white.svg" alt=""><span class="question_text">Collegare gli account di una piattaforma al tuo account EA</span></a>
+            <a href="" class="link_question"><img src="assets/svg/ea-medallion-white.svg" alt=""><span class="question_text">Come riscattare un codice</span></a>
+            <a href="" class="link_question"><img src="assets/svg/eaglobalnav-iconalert-white.svg" alt=""><span class="question_text">Non riesco a giocare online</span></a>
+          </div>
+          <p class="question_footer">Non hai trovato ciò che cerchi? Vai su <a href="">Aiuto EA</a> , <a href="">Answers HQ</a>  oder die <a href="">Forum EA</a>.</p>
+        </div>
+      </section>
+  
+      <div class="wrapper">
+        <div>
+          <button class="ellipsis" onclick="showSidebar()">
+            <svg viewBox="0 0 16 16" id="ellipsis">
+              <g>
+                <circle cx="14.143" cy="8" r="1.875"></circle>
+                <circle cx="7.996" cy="8" r="1.875"></circle>
+                <circle cx="1.857" cy="8" r="1.875"></circle>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <a href=""><img src="./assets/svg/ea-wordmark-network-nav-coral.svg" alt="" id="ea-nav"/></a>
+        </div>
+  
+        <div id="sidebar" class="sidebar">
+          <div class="sidebar_text">
+            <span>Tutti i giochi</span><svg class="logo_sidebar" id="logo_sidebar" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16">
+              <path d="M13.4,11.9l-4-4l3.9-3.9c0.6-0.6,0.7-1.3,0.3-1.7c-0.4-0.4-1.2-0.3-1.7,
+              0.3L8,6.6l-4-4 C3.5,2.1,2.7,1.9,2.3,2.3C1.9,2.7,2.1,3.5,2.6,4.1l4,
+              4l-3.9,3.9c-0.6,0.6-0.7,1.3-0.3,1.7c0.4,0.4,1.2,0.3,1.7-0.3L8,9.4l4,
+              4 c0.6,0.6,1.3,0.7,1.7,0.3C14.1,13.3,13.9,12.5,13.4,11.9z"></path></svg>
+          </div>
+  
+          <div class="games">
+            <img src="assets/images/ea-sidebar.png" alt="" id="ea_sidebar">
+            <img src="assets/svg/ea-play-mono-logo-svg.svg" alt="" id="ea_logo">
+          </div>
+  
+          <div class="games_grid">
+            <div class="fifa">
+              <a href="" class="link_fifa">
+                <img src="assets/images/eas-fifa22-sidebar.jpg" alt="" id="fifa_img">
+              </a>
+              <div class="fifa_content">
+                <img src="assets/svg/fifa23-logo-white-stacked.svg" alt="" id="logo_fifa">
+              </div>
+            </div>
+            <div class="f1">
+              <a href="" class="link_f1">
+                <img src="assets/images/f122-sidebar.png" alt="" id="f1_img">
+              </a>
+              <div class="f1_content">
+                <img src="assets/images/f122-gamebox-logo.png" alt="" id="logo_f1">
+              </div>
+            </div>
+            <div class="madden23">
+              <a href="" class="link_madden23">
+                <img src="assets/images/madden-23-sidebar.jpg" alt="" id="md_img">
+              </a>
+              <div class="madden23_content">
+                <img src="assets/svg/m23-gamebox-logo.svg" alt="" id="logo_md">
+              </div> 
+            </div>
+            <div class="apex">
+              <a href="" class="link_apex">
+                <img src="assets/images/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg" alt="" id="apex_img">
+              </a>
+              <div class="apex_content">
+                <img src="assets/svg/apex-legends-mono-logo.svg" alt="" id="logo_apex">
+              </div>
+            </div>
+            <div class="battlefield">
+              <a href="" class="link_battlefield">
+                <img src="assets/images/battlefield-2042-sidebar.jpg" alt="" id="battlefield_img">
+              </a>
+              <div class="battlefield_content">
+                <img src="assets/svg/battlefield-2042-mono-logo-svg.svg" alt="" id="logo_battlefield">
+              </div>
+            </div>
+            <div class="sims">
+              <a href="" class="link_sims">
+                <img src="assets/images/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg" alt="" id="sims_img">
+              </a>
+              <div class="sims_content">
+                <img src="assets/images/the-sims-4-mono-logo.png" alt="" id="logo_sims">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="list">
+          <span>Giochi<svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="0.625em"
+            viewBox="0 0 512 512"
+            id="arrow-down">
+            <path
+              d="M233.4 406.6c12.5 12.5 32.8 12.5 
+          45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></span>
+          
+          <div class="dropdown-content">
+            <div class="esplora-giochi">
+              <h4>ESPLORA I GIOCHI</h4>
+              <ul>
+                <li><a href="">Ultimi giochi</a></li>
+                <li><a href="">Prossimamente</a></li>
+                <li><a href="">Giochi Gratuiti</a></li>
+                <li><a href="">EA SPORTS</a></li>
+                <li><a href="">EA Originals</a></li>
+                <li><a href="">Libreria dei giochi</a></li>
+                <li><a href="">Offerte EA app</a></li>
+              </ul>
+            </div>
+  
+            <div class="piattaforme">
+              <h4>PIATTAFORME</h4>
+              <div>
+                <ul>
+                  <li><a href="">PC</a></li>
+                  <li><a href="">PlayStation®5</a></li>
+                  <li><a href="">Xbox Series X</a></li>
+                  <li><a href="">Nintendo Switch™</a></li>
+                  <li><a href="">Dispositivi mobili</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="list">
+          <span>Altre esperienze<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+              45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </span>
+          <div id="esperienze">
+            <ul>
+              <li><a href="">EA Play</a></li>
+              <li><a href="">l'EA app</a></li>
+              <li><a href="">Competizioni videoludiche</a></li>
+              <li><a href="">Diretta di EA Play</a></li>
+              <li><a href="">Test di gioco</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="list">
+          <span>Informazioni<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+              45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </span>
+          <div id="informazioni">
+            <ul>
+              <li><a href="">Società</a></li>
+              <li><a href="">EA studi</a></li>
+              <li><a href="">Lavora con noi</a></li>
+              <li><a href="">La nostra tecnologia</a></li>
+              <li><a href="">EA Partners</a></li>
+              <li><a href="">Notizie</a></li>
+              <li><a href="">Inside EA</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="list">
+          <span>Impegni<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+              45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </span>
+          <div id="impegni">
+            <ul>
+              <li><a href="">I nostri impegni</a></li>
+              <li><a href="">Gioco positivo</a></li>
+              <li><a href="">Diversità e inclusione</a></li>
+              <li><a href="">Impatto sociale</a></li>
+              <li><a href="">Persone e cultura</a></li>
+              <li><a href="">Ambiente</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="list">
+          <span>Risorse<svg xmlns="http://www.w3.org/2000/svg" height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+              45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></span>
+          <div id="risorse">
+            <ul>
+              <li><a href="">Aiuto</a></li>
+              <li><a href="">Forum</a></li>
+              <li><a href="">Filtro Famiglia</a></li>
+              <li><a href="">Accessibilità</a></li>
+              <li><a href="">Stampa</a></li>
+              <li><a href="">Investitori</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-tablet">
+        <button class="hamburger" onclick="showSidebarTablet()">
+            <svg x="0px" y="0px" viewBox="0 0 20 16" id="hamburger-logo"><path d="M1,2h18c0.6,0,1-0.4,1-1s-0.4-1-1-1H1C0.4,0,0,0.4,0,1S0.4,2,1,2z M19,
+                7H1C0.4,7,0,7.4,0,8s0.4,1,1,1h18 c0.6,0,1-0.4,1-1S19.6,7,19,7z M19,
+                14H1c-0.6,0-1,0.4-1,1s0.4,1,1,1h18c0.6,0,1-0.4,1-1S19.6,14,19,14z"></path></svg>
+        </button>
+      </div>
+  
+      <section class="hamburger-section" id="hamburger-section">
+        <div class="header">
+          <a href=""><img src="assets/svg/ea-wordmark-network-nav-coral.svg" alt=""/></a>
+          <span><svg
+              class="eapl-local-nav__close-icon eapl-local-nav_drawer-close-icon"
+              x="0px"
+              y="0px"
+              viewBox="0 0 40 40" id="close-side">
+              <g viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  style="stroke: currentColor"
+                  fill="none"
+                  clip-rule="evenodd"
+                  d="M20.2019 36.5256C30.433 36.5256 38.7269 28.4553 38.7269 18.5C38.7269 8.54472 30.433 0.474365 20.2019 0.474365C9.9708 0.474365 1.67688 8.54472 1.67688 18.5C1.67688 28.4553 9.9708 36.5256 20.2019 36.5256Z"
+                  stroke-width="0.95"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.1566 13.1711C15.7806 12.8052 15.1709 12.8052 14.7949 13.1711C14.4189 13.537 14.4189 14.1302 14.7949 14.4961L18.8392 18.4314L14.6543 22.5035C14.2783 22.8694 14.2783 23.4626 14.6543 23.8285C15.0304 24.1944 15.64 24.1944 16.0161 23.8285L20.201 19.7564L24.3857 23.8284C24.7618 24.1943 25.3714 24.1943 25.7475 23.8284C26.1235 23.4625 26.1235 22.8693 25.7475 22.5034L21.5627 18.4314L25.6069 14.4962C25.9829 14.1303 25.9829 13.5371 25.6069 13.1712C25.2309 12.8053 24.6212 12.8053 24.2452 13.1712L20.201 17.1064L16.1566 13.1711Z"
+                ></path>
+              </g>
+              </svg>
+          </span>
+        </div>
+        
+        <section>
+          <div class="ac">
+            
+            <input class="ac-input" id="ac-1" name="ac-1" type="checkbox" />
+            <label class="ac-label" for="ac-1">Giochi<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+            45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></label>
+            
+            <div class="ac-text">
+              
+              <div class="ac-sub">
+                <input class="ac-input" id="ac-2" name="ac-2" type="checkbox" />
+                <label class="ac-label" for="ac-2">ESPLORA GIOCHI</label>
+                <div class="ac-sub-text">
+                  <ul>
+                    <li><a href="">Ultimi giochi</a></li>
+                    <li><a href="">Prossimamente</a></li>
+                    <li><a href="">Giochi gratuiti</a></li>
+                    <li><a href="">EA SPORTS</a></li>
+                    <li><a href="">EA Originals</a></li>
+                    <li><a href="">Libreria dei giochi</a></li>
+                    <li><a href="">Offerte EA app</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="ac-sub">
+                <input class="ac-input" id="ac-3" name="ac-3" type="checkbox" />
+                <label class="ac-label" for="ac-3">PIATTAFORME</label>
+                <div class="ac-sub-text">
+                  <ul>
+                    <li><a href="">PC</a></li>
+                    <li><a href="">PlayStation®5</a></li>
+                    <li><a href="">Xbox Series X</a></li>
+                    <li><a href="">Nintendo Switch™</a></li>
+                    <li><a href="">Dispositivi mobili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ac">
+            
+            <input class="ac-input" id="ac-4" name="ac-4" type="checkbox" />
+            <label class="ac-label" for="ac-4">Altre esperienze<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+            45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></label>
+            
+            <div class="ac-text">
+              
+              <div class="ac-sub">
+                <div class="ac-label" id="ac-4">
+                  <ul>
+                    <li><a href="">EA Play</a></li>
+                    <li><a href="">EA App</a></li>
+                    <li><a href="">Competizioni videoludiche</a></li>
+                    <li><a href="">Diretta di EA Play</a></li>
+                    <li><a href="">Testi di gioco</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ac">
+            
+            <input class="ac-input" id="ac-5" name="ac-5" type="checkbox" />
+            <label class="ac-label" for="ac-5">Informazioni<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+            45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></label>
+            
+            <div class="ac-text">
+              
+              <div class="ac-sub">
+                <div class="ac-label" id="ac-5">
+                  <ul>
+                    <li><a href="">Società</a></li>
+                    <li><a href="">EA Studi</a></li>
+                    <li><a href="">Lavora con noi</a></li>
+                    <li><a href="">La nostra tecnologia</a></li>
+                    <li><a href="">EA Partners</a></li>
+                    <li><a href="">Notizie</a></li>
+                    <li><a href="">Inside EA</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ac">
+            
+            <input class="ac-input" id="ac-6" name="ac-6" type="checkbox" />
+            <label class="ac-label" for="ac-6">Impegni<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+            45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></label>
+            
+            <div class="ac-text">
+              
+              <div class="ac-sub">
+                <div class="ac-label" id="ac-6">
+                  <ul>
+                    <li><a href="">I nostri impegni</a></li>
+                    <li><a href="">Gioco positivo</a></li>
+                    <li><a href="">Diversità e inclusione</a></li>
+                    <li><a href="">Impatto sociale</a></li>
+                    <li><a href="">Persone e cultura</a></li>
+                    <li><a href="">Ambiente</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="ac">
+            
+            <input class="ac-input" id="ac-7" name="ac-7" type="checkbox" />
+            <label class="ac-label" for="ac-7">Risorse<svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="0.625em"
+              viewBox="0 0 512 512"
+              id="arrow-down">
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 
+            45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></label>
+            
+            <div class="ac-text">
+              
+              <div class="ac-sub">
+                <div class="ac-label" id="ac-7">
+                  <ul>
+                    <li><a href="">Aiuto</a></li>
+                    <li><a href="">Forum</a></li>
+                    <li><a href="">Filtro famiglia</a></li>
+                    <li><a href="">Accessibilità</a></li>
+                    <li><a href="">Stampa</a></li>
+                    <li><a href="">Investitori</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      
     <!-- Christian -->
     <section>
         <div>
@@ -21,11 +510,1219 @@
         </div>
     </section>
 
-    <!-- Dennis -->
-    <section>
+     <!-- Dennis -->
+     <section>
+        <div class="container-news-h3">
+            <h3 id="h3-news">Ultime Novità</h3>
+        </div>
+        <div class="tabs-wrapper">
+            <div class="tabs-container">
+                <div class="tabs">
+                    <p class="button-tabs" onclick="mostraCard('EA-Container')" id="EA">Notizie EA</p>
+
+                    <p class="button-tabs" onclick="mostraCard('EA-Sports')" id="EA-FC">EA SPORTS FC</p>
+
+                    <p class="button-tabs" onclick="mostraCard('apex')" id="Apex-button">Apex Legends</p>
+
+                    <p class="button-tabs" onclick="mostraCard('the-sims')" id="The-Sims-Button">The Sims 4</p>
+
+                    <p class="button-tabs" onclick="mostraCard('StarWars')" id="Star-Wars-Button">Star Wars</p>
+
+                    <p class="button-tabs" onclick="mostraCard('F1')" id="F1-Button">F1</p>
+
+                    <p class="button-tabs" onclick="mostraCard('Battlefield')" id="Battlefield-Button">Battlefield</p>
+
+                    <p class="button-tabs" onclick="mostraCard('NeedForSpeed')" id="NeedForSpeed-Button">Need For Speed
+                    </p>
+                </div>
+                <button id="button-left" class="tabs-arrow">
+                    <svg id="arrow-left" class="svg-arrow" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet"
+                        focusable="false">
+                        <g>
+                            <path
+                                d="M7.4,9.7l5.8-4.8c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4l-5.8,4.8 c-0.4,0.4-1,0.4-1.4,0l0,0C7,10.7,7,10.1,7.4,9.7z">
+                            </path>
+                            <path
+                                d="M7.2,11.1L1.4,6.3C1,5.9,1,5.3,1.4,4.9l0,0c0.4-0.4,1-0.4,1.4,0l5.8,4.8c0.4,0.4,0.4,1,0,1.4 l0,0C8.3,11.5,7.6,11.5,7.2,11.1z">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+                <button id="button-right" class="tabs-arrow">
+                    <svg id="arrow-right" class="svg-arrow" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet"
+                        focusable="false">
+                        <g>
+                            <path
+                                d="M7.4,9.7l5.8-4.8c0.4-0.4,1-0.4,1.4,0l0,0c0.4,0.4,0.4,1,0,1.4l-5.8,4.8 c-0.4,0.4-1,0.4-1.4,0l0,0C7,10.7,7,10.1,7.4,9.7z">
+                            </path>
+                            <path
+                                d="M7.2,11.1L1.4,6.3C1,5.9,1,5.3,1.4,4.9l0,0c0.4-0.4,1-0.4,1.4,0l5.8,4.8c0.4,0.4,0.4,1,0,1.4 l0,0C8.3,11.5,7.6,11.5,7.2,11.1z">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+        <div class="tabs-card-wrapper">
+            <div class="tabs-card-container" id="EA-Container">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-2023-impact-report-featured2-image-16x9-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-featured2-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Parte EA SPORTS -->
+            <div class="tabs-card-container" id="EA-Sports">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">22-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            EA SPORTS FC 24 | Aggiornamento PC
+                        </h3>
+                        <p class="p-card">
+                            Scopri i prossimi aggiornamenti di EA SPORTS FC 24 su PC basati sui feedback della
+                            community.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">22-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            EA SPORTS FC 24 | Probabilità pacchetti
+                        </h3>
+                        <p class="p-card">
+                            Scopri le probabilità per i pacchetti in EA SPORTS FC 24 che elencheranno
+                            nel dettaglio ciò che è possibile trovare all'interno dei pacchetti acquistati.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            EA SPORTS FC 24 | Note del team di sviluppo - Approfondimento sugli stili d...
+                        </h3>
+                        <p class="p-card">
+                            Usa questa pagina come guida agli stili di gioco mentre muovi i primi passi in EA SPORTS FC
+                            24.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            EA SPORTS FC 24 | NoteNote di sviluppo - Approfondimento sulla versione per...
+                        </h3>
+                        <p class="p-card">
+                            EA SPORTS FC 24 su Nintendo Switch riceverà un miglioramento significativo grazie
+                            al motore di gioco Frostbite, arrivando cosi ad avere le stesse funzionalità delle versioni
+                            PS4 e Xbox One.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">18-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazione EA SPORTS FC 24 - Gemme nascoste nella Carriera tecnico
+                        </h3>
+                        <p class="p-card">
+                            Scopri i giocatori sulla lista di ogni tecnico. Ecco i giocatori con i maggiori margini di
+                            crescita in EA SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">18-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazioni EA SPORTS FC 24 - Potenziale più alto nella Carriera tecnico
+                        </h3>
+                        <p class="p-card">
+                            Questi giocatori puntano in alto.
+                            Ecco i giocatori con il potenziale più alto in EA SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">17-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazioni EA SPORTS FC 24 - Le stelle più veloci
+                        </h3>
+                        <p class="p-card">
+                            Via in un batter d'occhio. Ecco i giocatori e le giocatrici più veloci in EA SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">17-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazioni EA SPORTS FC 24 - Fuoriclasse a cinque stelle
+                        </h3>
+                        <p class="p-card">
+                            Tante giocate nel cilindro e sicurezza da vendere.
+                            Ecco i giocatori e le giocatrici con abilità a 5 stelle in EA SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">17-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutzioni EA SPORTS FC 24 - I migliori e le migliori nel dribbling
+                        </h3>
+                        <p class="p-card">
+                            Impossibili da fermare palla al piede.
+                            Ecco il meglio del meglio nel dribbling in EA SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">17-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazioni EA SPORTS FC 24 - I giocatori maggiormente migliorati
+                        </h3>
+                        <p class="p-card">
+                            Un anno può fare davvero la differenza. Ecco i giocatori maggiormente migliorati in EA
+                            SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">17-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazioni EA SPORT FC 24 - Le migliori stelle under 21
+                        </h3>
+                        <p class="p-card">
+                            La nuova generazione brilla già nel gioco più bello del mondo.
+                            Chi realizzerà il proprio potenziale quest'anno? Ecco i migliori giocatori e giocatrici
+                            under 21 in EA SPORTS FC 24.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+
+                            <span class="span-rosso">16-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Valutazioni EA SPORTS FC 24 - I migliori giocatori e giocatrici "A prova d...
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- PARTE APEX LEGENDS -->
+            <div class="tabs-card-container" id="apex">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-2023-impact-report-featured2-image-16x9-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- PARTE THE SIMS -->
+            <div class="tabs-card-container" id="the-sims">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/port-of-marriage.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/gameplaydeepdivefc24-pitchnotes-bootblack.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-featured2-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- PARTE STAR WARS -->
+            <div class="tabs-card-container" id="StarWars">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-2023-impact-report-featured2-image-16x9-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-featured2-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- PARTE F1 -->
+            <div class="tabs-card-container" id="F1">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/pj-f123-ned-036-ric.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/pj-f123-hun-002-tsu-unmarked.jpg.adapt.crop16x9.431p.jpg" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-featured2-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- PARTE DI BATTLEFIELD -->
+            <div class="tabs-card-container" id="Battlefield">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/kin-com-u53-t.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-featured2-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- PARTE DI NEED FOR SPEED -->
+            <div class="tabs-card-container" id="NeedForSpeed">
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-2023-impact-report-featured2-image-16x9-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">20-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Criterion Games si unisce a
+                            EA Entertainment
+                        </h3>
+                        <p class="p-card">
+                            Lo studio si unisce ai nostri fenomenali
+                            developer di Battlefield
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">14-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Condividiamo il nostro rapporto
+                            sull'impatto del 2023.
+                        </h3>
+                        <p class="p-card">
+                            Come EA sta creando valore duraturo per i nostri
+                            dipendenti, i nostri giocatori, la nostra società
+                            e il pianeta.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-featured2-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Il vincitore del Positive Plater Award
+                            di Electronic Arts è Verhulst.
+                        </h3>
+                        <p class="p-card">
+                            L'EA Positive Player Award premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.</p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png" alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">7-set-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            La nuovissima EA app per Mac
+                        </h3>
+                        <p class="p-card">
+                            A breve l'EA app prenderà il posto di Origin come
+                            piattaaforma principale per Mac.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/ea-news-celebrating-interns-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">10-ago-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Aprono le votazioni per il primo EA Positive Player Award
+                        </h3>
+                        <p class="p-card">
+                            Il Positive Player Award di EA premia i finalisti
+                            degli esport che hanno innalzato la cultura
+                            del gioco e celebra il loro contributo alla
+                            positività, al livello di abilità e
+                            all'impatto per la community della ALGS.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-card">
+                    <div class="tabs-img">
+                        <img src="./assets/images/cliffhanger-article-16x9-featured-image.png.adapt.crop16x9.431p.png"
+                            alt="">
+                    </div>
+
+                    <div class="text-card">
+                        <h2 class="h2-card">
+                            <span class="span-rosso">Electronic Arts inc</span>
+                            <span class="span-data">27-log-2023</span>
+                        </h2>
+                        <h3 class="h3-card">
+                            Festeggiamo il futuro di EA con gli stagisti!
+                        </h3>
+                        <p class="p-card">
+                            Organizziamo eventi dedicati agli stage
+                            che consentono a chi partecipa di conoscersi, collaborare, imparare
+                            e dare slancio alla propria carriera con EA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE CARD -->
+        </div>
+        <div class="details-button-container">
+            <button id="details">Più dettagli</button>
+        </div>
 
     </section>
-
+    
+    
     <!-- Massimo -->
     <section>
         <div id="massimo-wrapper">
@@ -63,12 +1760,514 @@
         </div>
     </section>
 
+
     <!-- Alessio -->
+    
     <footer>
+        <div class="background-colorFooter">  
+        <div class="containerFooter">
+            <div class="logoEaFooter">
+                <img width="60px" src="https://media.contentapi.ea.com/content/dam/eacom/common/medallion-violet.png"
+                    alt="">
+            </div>
 
+            <div class="contenitora">
+                <a href="#" class="distanze_footer">Libreria dei giochi</a>
+                <a href="#" class="distanze_footer">Registrati</a>
+                <a href="#" class="distanze_footer">Riscatta codice</a> 
+                <a href="#" class="distanze_footer">EA app</a>
+                <a href="#" class="distanze_footer">Informazioni</a>
+                <a href="#" class="distanze_footer">Accessibilità</a>
+                <a href="#" class="distanze_footer">Aiuto</a>
+            </div>
+
+
+            <div class="distanzaButton">
+                
+                    <button id="linguaButton" class="toggle-button">
+                        <div>
+                            <span class="colorButton">Prezzi per regione</span>
+                        </div>
+                        <div class="allineamentoButtonLingua">
+                            <span class="italiaButton">Italia</span>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                <path
+                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                            </svg>
+                        </div>
+                    </button>
+               
+    
+    
+                <div id="linguaOptions" class="toggle-content">
+                    <div class="contenitorColonne">
+                        <div class="colonne">
+                            <div class="spazio" data-index="0">
+                                <span>Austria</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="1">
+                                <span>Belgio</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="2">
+                                <span>Bulgaria</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="3">
+                                <span>Croazia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="4">
+                                <span>Cipro</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="5">
+                                <span>Repubblica Ceca</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="6">
+                                <span>Danimarca</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="7">
+                                <span>Estonia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="8">
+                                <span>Finlandia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></div>
+                        </div>
+                        <div class="colonne">
+                            <div class="spazio" data-index="9">
+                                <span>Francia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="10">
+                                <span>Germania</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="11">
+                                <span>Greece</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="12">
+                                <span>Ungheria</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="13">
+                                <span>Islanda</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="14">
+                                <span>Irlanda</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="15">
+                                <span>Italia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="16">
+                                <span>Lettonia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="17">
+                                <span>Liechtenstein</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                        </div>
+                        <div class="colonne">
+                            <div class="spazio" data-index="18">
+                                <span>Lituania</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="19">
+                                <span>Lussemburgo</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="20">
+                                <span>Malta</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="21">
+                                <span>Paesi Bassi</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="22">
+                                <span>Norvegia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="23">
+                                <span>Polonia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="24">
+                                <span>Portogallo</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="25">
+                                <span>Romania</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div class="spazio" data-index="26">
+                                <span>Slovacchia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                        </div>
+                        <div class="colonne">
+                            <div id="spazioQuattro" class="spazio" data-index="27">
+                                <span>Slovenia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div id="spazioQuattro" class="spazio" data-index="28">
+                                <span>Spagna</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div id="spazioQuattro" class="spazio" data-index="29">
+                                <span>Svezia</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                            <div><span class="lineaSpazio"></span></div>
+                            <div id="spazioQuattro" class="spazio" data-index="30">
+                                <span>Svizzera</span>
+                                <svg class="checked" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+  
+  
+  
+  
+            <div class="containerButtonTwo">
+                
+                <button id="regioneButton" class="toggle-button">
+                    <div>
+                        <span class="colorButton">Lingua</span>
+                    </div>
+                    <div class="allineamentoButtonLingua">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA50lEQVR42nWRMQ/BQBSAL0aRdDQzMnVjJWam1iDiV4jE5g+ZLSYSC6vIhSbowFrX3rXVeL0Xjza8fOn0fb17LSvOSt84Jwe4uu75cgT2By4ZQ24aBtJ0MyGSJHnqieKUMAzlYPSwbED1up+gv7CRpw7iOI6iCGylVNBoeqYp6rU/QdaGQVtUqqrT+RGAR7aUMggCtAE4Kh+0562cnQba9srlTAAqAouS7fu+gNF2JhguxxTkbSFAvRtG2pgmxwAvgwhfkP3QgwEAy3A6gZamq1MDL8YP9TmBWQViu9uuVyt8Ilz/YP7mBVsTOUQfESu+AAAAAElFTkSuQmCC" alt="">
+                        <span class="italiaButton">Italia</span>
+                        <svg class="regioneArrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                </button>
+           
+
+
+            <div id="regioneOption" class="toggle-content">
+                <div class="contenitorColonneRegione">
+                    <div class="colonne">
+                        <div class="spazioRegione" data-index="1">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABVElEQVR42l2RP0vDQBjGb3DQT9BZN3Wqky46FZysk4iC4D8UOwgWxE5CEN3EwVkcXBQHEbSgm7RLv4AtUihqKkQTay5n7hpTfC4Xz9Dj4eUuee73vLxH1nMPi0v3qGqTFDPyn9vz1eVJe20WVYnAF/yEl3fvuh4XrSAIUMMwxIYzpnV2fiovwDdeEFnDQ9Ua2eRip9BeWRXTWZHJ+KNj/OhQJiBawjodmHzfR3UcB+6erQ9Kqeu6TrSC9gz+lkul/wQNVu6+hbJmQ2x4iO8bcQL6htX+8mAFDO7nl3rv1BW+4GhF69U0W9+seHMdt9TFhpsM3gJM02mwWf+AlJE/2ZgggCEB/QHgebLppt1UfVt/C3izWms1Ggd7uwT3RKWSHIjqW4IjNieEplJQnPBYe8K4gRdCcM4RhRw1dea6LJrSm+UBj17wjqTrIZMCD/ViToK1fgEIGF+0KWM5dQAAAABJRU5ErkJggg==" alt="">
+                            <span>United Stades</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="2">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABQklEQVR42mWRsUtCURTG7+Df0NwkbeESuTa25NAQgdiQ1hIELi0hPKRNcXk8cK3J0KxoihqCN2dDBIG0pnBdRDJf9+LvduAmdPl4HM4533e+c55qRM938edpFBeCB8H7x6i1WwYEucMuWNvukCdDm7q4fUuu2tZaysSAeBKG00bdWIscuH96nQTl5MdElz0FNX4ZwgHGGMr0zfaLAOZJJSYPmRitpZWaI8Cjr//Ym54F9vfR/Z3bkiDRGkVcQXYEnNh/j24hLD4mw1SswkTxIH0eX+vZcSbjv2SqyxuLE4wXk6Y/bZMI3ATMsQC3c6trLbuKpCffhNe439w7V+kjR2B97sPGeCsct/0EJKnyJa8PdtBVqbziRHTQzbG5A8CC7ECr/DhKxINiCTnFz2NvxjFUgDeWA84xkthI5dOrTaSpzgHPM2cUphkv7gAAAABJRU5ErkJggg==" alt="">
+                            <span>United Kingdom</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="3">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABT0lEQVR42mWRPUvDUBSG7xD8Cc5O4uTkXlBwcHIRXEpd/FgKEXQKIoZiFRUqVuIgKChdYsXaQaSoYKmoS1tLKwhBsFJJBt3E0edwbfyCl5uTe8/z3vck6spOry8fqu54oqsfdfasmZHRnZkVZURDDY3tSaH6RJGR7Vbxtvn81ipcNNycd175aNT38/ezS6coZp8VLuvVWo2dmJkV4FqpYDHpW5Y/PoFe4ia6mZzmeHjqCG8YuvHlVQBi4O0fuMJY1nsm462m8vYWx45bAaAV6TsF4OGX79zdIsOg9EkAf7yZo5swiO45p6RrARiRoQnAmkzMY4wFNd46d+/gBnXKKcvoMrcRxYADHVrnxlWvdLNym8aU0SGAfA0zi1+pGrAb5taAGlhg1eQv4OHxNQgCzH52a2M2wf4C7HLD/2zM+tT0mOEb+JL+kaE4a0uCtetPJnnvAGarUGAAAAAASUVORK5CYII=" alt="">
+                            <span>Australia</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="4">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABCUlEQVR42mMonXkNiDIn34GQt+6/u3/v/sXLl4Ho7LmzQPSKn/8lA8NtBoaXYMQAVHf04is4+gEG38HgCwh8/jGh7+vUqT/amoDoNlzD1qMvIOjdu3evkMCTp0+/NhV/LC58XxaNRcOaXa8hGuDagBogqt+mRwB1gjQkdd9E04BsCVADRDUQAXVCNUCUAtGSzdeBjn4HAxA9ENXPoyKBOkEa4pv2QowHqgaiT58+odkAUf0yxP95bsEJoIawxitw1UCEphqIIKqBCKjzBNwGoNIp219NX30BTfWjx3chqt+4uEI1BGRsgHsAqw1wT0M1GOduMgtZB0Ecfhu2b90EQUtWLoAgoCJkBABwtXFCOK2MzAAAAABJRU5ErkJggg==" alt="">
+                            <span>France</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="5">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABCElEQVR42mPw9XJARvb2BvgRA1DR9q2bkNGSlQvQUHtLPYREaAByICgjJRUZIdsMlAUyGArsI/ZumTa/pBvIh5CdsSA0L8seKIWMoDZscLT4vX7tz4rKXzn5v1JSgehHTMLb9IifAf5vXFyB5HcLy8+mmq80Nb82FQMVY9HwJSwcqO6nqysQvbS2hqgGovdl0QgNmKqBxgPRZ0NDiOrHEhJQG1Z3av08s/rrplwg+rjSD47eTvF5062NjIAKoBr+vl/8+1fY17vFHx74/bkTDiR/XnP+dtEAyACSQPTptDwQPboaAVTMcOiQD1DD9xd9aOj3k2KgEUAEVAdhABEw6EA24EdARcgkAMhYEh1utyQwAAAAAElFTkSuQmCC" alt="">
+                            <span>Deutschland</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="6">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA50lEQVR42nWRMQ/BQBSAL0aRdDQzMnVjJWam1iDiV4jE5g+ZLSYSC6vIhSbowFrX3rXVeL0Xjza8fOn0fb17LSvOSt84Jwe4uu75cgT2By4ZQ24aBtJ0MyGSJHnqieKUMAzlYPSwbED1up+gv7CRpw7iOI6iCGylVNBoeqYp6rU/QdaGQVtUqqrT+RGAR7aUMggCtAE4Kh+0562cnQba9srlTAAqAouS7fu+gNF2JhguxxTkbSFAvRtG2pgmxwAvgwhfkP3QgwEAy3A6gZamq1MDL8YP9TmBWQViu9uuVyt8Ilz/YP7mBVsTOUQfESu+AAAAAElFTkSuQmCC" alt="">
+                            <span>Italia</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="7">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABDElEQVR42m2RMU7DQBBFfRUoQ5WOHCA1VNBQcAxyAW6QhoIbIGq4Q5BQBBGKQiRIGqQgtPasd21s8XYn2Abl68uN3x/PfCfGGOec916s4CzL0jT97OgjarVe47f3RSIidV1X0aoq6juqLMuiKBjH0DzPl6/LbaCjyt3f1aNLfzEqb28a1Fq7I8DgAA2H6vxwIOMxAWgwnrOXeRsI9Gbjj48aWu2en2C4jWcIcKLSbMy7Lp32+3LQY0NtgsDjdJrQktLcF77wS4OqmQIN1ga2dCyEpVt6b5/Tv6yYKGIhQNMEiigf5a6u3dl5dnJK2PzV5GESAk3ZWqLW4kT0Vt2nDfz7kTSNaUPNDmpQ9Q8de8Ify+OPnAAAAABJRU5ErkJggg==" alt="">
+                            <span>日本</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="8">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAyklEQVR42n2OsQ6CMBRF+weMzDrqxKYfwKyTLg4OsJm46k8YP0/DwmIiJCQSLKVUjJcWKlX05qTDy7mvj1Rp2kUkiYbFV80tDBUE0tNMJfOQKcuSc17I0Jz2FLQthNA2YyzPc7yX09ko/LGpjFHQZ/yym0JBSHE88N2+3GwbPL9YrcF9sQR8PuOuCzCJCKkLkPQUsMkUZI5DxyM6GILMtgGGwUdBqaBWTTu2LKxoC57ftb93wwYYNgV1sTq69za14v2DImrfLkH7al79dWSVyfXhRAAAAABJRU5ErkJggg==" alt="">
+                            <span>Polska</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="9">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABDklEQVR42mNgCGPCh/QYoCQcAfnVJyogqG5vHQRtuB8MRNmbsoEocXUiBIUsCYFqAKqAywFFf/8KgyP3WW5AZDLBGIhAGljYoDZAVANNBSrKL/xkV/kTiICMb18NZ5wTRtcAtCFiZzjEyMvntjx+8h6Ith59YZT/I75gLVAPEAE1OK93QtgAd0NS902Q2XMer9n1+ujFV/VLH4I1iAJR2a4IFBuAEkANEzvXAQ0G6gGSQD1LVi6AqDafLgK0BKoB6AGg+4AI6AegNqDTgaqBCOwHUaAfuJp4gAjoe4QGSGgAEdChQD0fHvgBEVA10FSgUjgJ1qDHgBymQATUBokHSIDCgxWhAT0ugQgogQMBAM8n1yv5YwVsAAAAAElFTkSuQmCC" alt="">
+                            <span>Brasil</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                    </div>
+                    <div class="colonne">
+                        <div class="spazioRegione" data-index="10">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA3klEQVR42n3MvQ7BYBQG4LOajGZiECYbq5DYSCQSYnABFdyJS3ABNpvdBVgZDCRNK36q7dcfP/Gmp2k/knrz9KRfe96PLOvNHs+X53k3YfPxbFig6uGEw/EKhH+cV4CDMiB8C+IE2e4vcYHzlOIH4VUhRFio1/3F6jSbOUnG03s0UymD8OAAaPKMFApChi9xQd6LtuUO1v4Vfu7GTvRCSyJ1NFH7vU1NYet8J8mciFwiXxm7za5TqTKzXMa0szkwMxk9nQaNyC4Vd1xwB0PmtVuhRgPkK7AtFQJagt23D78OOlrpRiSPAAAAAElFTkSuQmCC" alt="">
+                            <span>Россия</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="11">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA2UlEQVR42mP4wcCAC71EYsARiP+zohKI/lW2QRi/cvKhKCUViH7EJPwM8IcghAagKATB5X66ugLRdwtLIPpsaAhEQC5Iw7evor9/hcHRhwd+QPLbV0MIiYRAyp4+RdXwviz6bXrE9xd9mKohDBQNP3btBKp+ef4SkAG0B0ODKLqGZ2+fvZ3i8zLEH8hA1SCKXcPlc1ten/T+uNJv75ZpGEqRNABDCRh28ACBhMlXba2vikpA9FlcHIhe8fMDEVDwNgNMAzxMv4SFYw1TkBFwDZjRCUG3kRhwBABSdCQSWYwoDgAAAABJRU5ErkJggg==" alt="">
+                            <span>España</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="12">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABCklEQVR42mPgjDtav/Thly9fvn79CiQ/wcA7GHgFBk+ePoUgBqCGKdtf3br/7u+/f0AEBH/B4A8Y/P79+9evXz9//vzx48f379/v37sP1QC05OjFV8iq0ZR++/YNXQNED9CS33/+YqoGOhhIomvIn/MYqAeraogPr9+8zcDhtwFZAxAda5ryY9Y8IHo9ffrXqVN/TOh71dYOJIHc2wwMCA2lq4+Xzrw2v6T7pbX1Z0PDp4YGrzQ1HykpA9FjCYlX/PxA8RNwDUClQLOBqr9bWMJVAxFQKQQBNQAFUTSgmf1VUQluNgQhNADdA3T3l7BwIHoZ4v/GxRWCgPohCKgUgqAagNRtDHQCBwIA+OVWMrU7rKMAAAAASUVORK5CYII=" alt="">
+                            <span>Česká republika</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="13">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABZ0lEQVR42lWRvUvDQBjG78/IrFMn7aZ0cBBHPyal3XUrVFyUTjrURaRLFwdx6qKbo4ODFUSoolXxA9uitDUHDZqk+Whi8JekVHo8HG+O5/fe816Eu7SoplL21LRMJAzD6Ok6onAcxzQNXdellG9CxLoSQtgTM1a5jHqlUhAEvu97ngdjyy8K13Uty+pkcz8b6+whQHvcTnFfzedjoN/vy8Iunz2WFW712bnW/MIAiG8AcDe3aOk8Paq39+rqWieTbl9ct8/OiUdTGA5DwEgmnYNDWnKp5/9ySoEoED7GeJ1MUtDiFIBZAZzCDjcS5n2vaC6vYGUPTdmcpmkAaAB8jI0zLokxEcnrdjGROAydSTfqDYAHRQHgJAQ+FQUgzmDbtmmaONSTY8SDatEaAVRSRQPQj9cEIHTr+eW72cQqowVAEBIeieh3BNtFIpGEJwfgWbTRFQ/9Dwz/4l2tVr2pxrqsVIbCN9QfN7JX66mNmtwAAAAASUVORK5CYII=" alt="">
+                            <span>Canada (En)</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="14">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABZ0lEQVR42lWRvUvDQBjG78/IrFMn7aZ0cBBHPyal3XUrVFyUTjrURaRLFwdx6qKbo4ODFUSoolXxA9uitDUHDZqk+Whi8JekVHo8HG+O5/fe816Eu7SoplL21LRMJAzD6Ok6onAcxzQNXdellG9CxLoSQtgTM1a5jHqlUhAEvu97ngdjyy8K13Uty+pkcz8b6+whQHvcTnFfzedjoN/vy8Iunz2WFW712bnW/MIAiG8AcDe3aOk8Paq39+rqWieTbl9ct8/OiUdTGA5DwEgmnYNDWnKp5/9ySoEoED7GeJ1MUtDiFIBZAZzCDjcS5n2vaC6vYGUPTdmcpmkAaAB8jI0zLokxEcnrdjGROAydSTfqDYAHRQHgJAQ+FQUgzmDbtmmaONSTY8SDatEaAVRSRQPQj9cEIHTr+eW72cQqowVAEBIeieh3BNtFIpGEJwfgWbTRFQ/9Dwz/4l2tVr2pxrqsVIbCN9QfN7JX66mNmtwAAAAASUVORK5CYII=" alt="">
+                            <span>Canada (Fr)</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="15">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABFUlEQVR42nWRPU/DMBCG8w+6dqVM3cgGykpGPiYQiIGBMiGxwj/shsTKBkTUEYrUJs6HE1c89lG3DJxeRWf7fey7S9RGkfKSxFrb5Au12RS97citu6fnoPXa2uWSxDw8qtl9e3P7dX1VXVyi7OR0C3CA2LW2ByD5Pk67NFVJgso4zqdTdv4Aco0A3fkZx1ibw6MsPsAtwDwA4sY3DAOAuMPd6H2yz9IBdGld4T3W3kfnoyW0rutaa12WpV6tWH5mmQesHXzgNsaIu/GBu6qq0geJAyiJgVCDlAHjxpokoZKP8TgfjfjSzG8P5m6Gm/7wubvzBWd6b4JJ3KItIPOWvgUIU0L4RDy4AXZ+ZFEU6uWVZP6PfgBgLC8Z2uCiVwAAAABJRU5ErkJggg==" alt="">
+                            <span>Danmark</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="16">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA90lEQVR42m2RPQrCQBSE43G8gWfwAB7ATvACVmKtnQewsrNVEDvBRlAUFfEHRBSUFBE2m8QkbnB2X3wGcfgIm2Rm83Zi3WzJWPkBsT854HJ90AJsdwcwGm8s+JKP6t0zoZIkfqnYKAzDp5GUyXK1SgPKUGkfQbm5U0q7oygidxAEvu9jMVnaOkBuCFbix+qRfE+PhIkxA+8NSo01U6xNC9UFgVsr1/oGftywEv8Df91sJfBEB1AZCsHQKIHdWIMn5hYCOEZCCH0GBFBJZMRD6xN7npTSdV2RURqgBtEJt8TlZDP4SBrgH6lHNPQnd7ybzWe4ZukMe2/PfI0FyyvabgAAAABJRU5ErkJggg==" alt="">
+                            <span>Suomi</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="17">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABJUlEQVR42m2QvUvDUBRHg6P4t4jOHRxEcNFRUGcFBcVVBwURdHTRRdAOIggOgl0U3Cp0aSFkEBVTUGxpoEGDr/loXvE0V9IoeRwud/idd+97hjE3BMO7I9K4rus4DrXRbkDdrlcMI4tBaPvuKKUba627utfrV60DpZprG62lZak3ImxVDtevD2DxYjMMQ3JxHGNGUYTwMTML9uTUQOBiokKUHNs0rVpJdRQCUaG5MJ8j+L5P9L50fLo6QeN5nqRbhUKOMH2ywkpv768I+3s7NCoRnsfGgcV+BdleBCacXxbPbq+owHdJOkcgDTyAiyVNw0qpwKiBIGlof30HQfDZUUA6OwGh+G8l4GfYitpHqfTRQjJh9A+mZT0+vVChWqs+lMuEsvwArvkr0rRX6H0AAAAASUVORK5CYII=" alt="">
+                            <span>México</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="18">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA7klEQVR42mP4wcBADHoJQyDOv8o2ZPQrJx+KUlKB6EdMAhR5hCE0ICQ8wqAkDH3Xt4cgqIaviko/Zs371zgBhIA2QEi4PUBLcvIhZgEZYA2fPv0Dg79///7+8/f379+/fv368uUfhERDFy9fZnj37h1Ewx8wgGgAkj8g4CsIfPny5dOnT0AGQgOyaiCAKP727RtcNRB8/vwZpEFMo7d05rX4pr1A5FV5yrV3I5A0zt0ER3KZSyEkUJyBwYSBgSU2c/Id/bplmOogiMNvAwQBBcEaGHviZu+D2ABEEBsgmjGNgGoAWgIl0RBQGkIiIQCOfSzbVgVcNQAAAABJRU5ErkJggg==" alt="">
+                            <span>Nederland</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                    </div>
+                    <div class="colonne">
+                        <div class="spazioRegione" data-index="19">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABOklEQVR42mWRPUvDUBSG76ijW2adurVzR+2oLiIqIiJWESpVXJQO4uyoo6u/IIP+AcEf0EUrgoZQktpg0WiS5gaf3KPx6/JwuDl533PvOVd5SnWUIg5TPbpylWVZx2SE6x8bIf+I9w+8Vgvp6YWvtR7s7Xa3d5JG06tvQLS82l1a9OZmITdQGzVZDIfnD1mm+eFOzzxN1cCrVsGtlP1SieT3Cf3NBW0MXOy/Wgz3kzUbAzoBKYY0TYdmxXEcRdG7WS9mRWHo+76iUa6OFJpnjrB1cgdrxzfC/FEbyIyMXebDKUBaFCY+v4X9wStRYJ+fQA/MhHsnSYIBXXHvx/EJaFuWY1lEMrY0nazXaREDh1L7tlwp1I5Ro/llYNhMGgNtYJApMRMoTgMKfRrkIYMgoCe315MXtb/iHz4AESQv/etWU50AAAAASUVORK5CYII=" alt="">
+                            <span>Norge</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="20">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAw0lEQVR42mNgcG6Eo9+7GCCIQS0XBbHEQhGDCQNQXenq4xD0+0kxBEG4cbP3ISPX3o1gPWANEKE/d8IhCCgHR/p1yyAIpAFuA7KGn9ecMVUjNIAc/aQYbjZEAwR9u2gAQZ9OywPR17O+r2cyoGiAK8VUDURANooG/KoRGoChBvQDxMVwpXB3y2UuBSKBzFlABOSCPa2WCwkyTA1ARXDV6BrgoQTUAw9WSMggBxQDCxsDKC5gcQl0IgSBTYIhkCIYyWACAJq+AUf+6Io4AAAAAElFTkSuQmCC" alt="">
+                            <span>Sverige</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="21">
+                            <span>中国</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="22">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABU0lEQVR42mWRzUrDQBSF+0yuhG7NxrdQFAoKXblwJRTRF3AjuOiiGxERlOLCnTYuhIol2CKiBdOgpjVqMpNMflr8kilWcDgMd+6cc++5M6WvUP7Hx7fQ8DzPGQ41Bo7zYj+VuJ4Uq/fwaLZaQohxsbIsS7NxEATnzdP2bTuO4zAMZwLXdXe3twAy2Kp7D5Ik4VhZWdV5BNavgDNZiikp1U4tNgxAgCuSaGgupew/92eWaEKcnhxr9mjBeC+X0by6gnJ4Q0AwFWjfmD6qX8GDXVm7XFq+uK7tKaUYDAF7LqBpzswyOpBvmm+LmzdQ59fvQOOsZw8+4fm+j6BjWbkgTVMiZmgc1oWYbOx356oKdvXAxg9JZmASvEwFlGcaBFyQ4jXMjgsoyYOS1EPrY4mvwToDkaIMxqIowjcyGHwWHcj7xco7/P1InlnvNMS3BiQKAx38AE1DsSNDguf/AAAAAElFTkSuQmCC" alt="">
+                            <span>대한민국</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                        <div><span class="lineaSpazio"></span></div>
+                        <div class="spazioRegione" data-index="23">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAGYktHRAD/AP8A/6C9p5MAAAEuSURBVChTpVK9SgNBEP7mNmcul4h24kmSB7AUfAEbsbGx8TVsU2gEwTewsbfxScRCCAo2Eg0YIsglISZ3udtdd9djUS8kgh8sOzszOz/fDHX8NYl/wMluCykEZBRDpmmmmY8fAWQUQUQhvN0dsGDdvBeBHbmVEy3IeApWr6IadiGHQ1C5DHIY0vazcYTjgIi+5G+wHPBxDzXOMWicon/eVKUtG4el7S2I3hvEewip7L+D2BZ0FFJZxlfXYGwVVCoZ7UqzgaB9Dz7qzqzABtAmTaB/eADO+5CTidEOjs/wWt8EqyhOZH5gtgXDQW0DwVMLo4tLTO9aSNSJb25BrgsUCvM50DBTEB/w9/aRPDyCv3RAnpdZZyO3SLoNJImaDwOprIuQWyRNJBWLf/oMAJ+5mHSXRuZmqAAAAABJRU5ErkJggg==" alt="">
+                            <span>Türkiye</span>
+                            <svg class="checkedRegione" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="flexButton">
+            <div class="containerButtonFooterMobile">
+            
+                <button class="buttonMobile">
+                    <div>
+                        <span class="colorButton">Prezzi per regione</span>
+                    </div>
+                    <div class="arrowMobile">
+                        <span class="italiaButton">Italia</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                </button>
+                
+                  <select id="scelta">
+                    <option class="optionFooter">Austria</option>
+                    <option class="optionFooter">Belgio</option>
+                    <option class="optionFooter">Bulgaria</option>
+                    <option class="optionFooter">Croazia</option>
+                    <option class="optionFooter">Cipro</option>
+                    <option class="optionFooter">Repubblica Ceca</option>
+                    <option class="optionFooter">Danimarca</option>
+                    <option class="optionFooter">Estonia</option>
+                    <option class="optionFooter">Finlandia</option>
+                    <option class="optionFooter">Francia</option>
+                    <option class="optionFooter">Germania</option>
+                    <option class="optionFooter">Greece</option>
+                    <option class="optionFooter">Ungheria</option>
+                    <option class="optionFooter">Islanda</option>
+                    <option class="optionFooter">Irlanda</option>
+                    <option class="optionFooter">Italia</option>
+                    <option class="optionFooter">Lettonia</option>
+                    <option class="optionFooter">Liechtenstein</option>
+                    <option class="optionFooter">Lituania</option>
+                    <option class="optionFooter">Lussemburgo</option>
+                    <option class="optionFooter">Malta</option>
+                    <option class="optionFooter">Paesi Bassi</option>
+                    <option class="optionFooter">Norvegia</option>
+                    <option class="optionFooter">Polonia</option>
+                    <option class="optionFooter">Portogallo</option>
+                    <option class="optionFooter">Romania</option>
+                    <option class="optionFooter">Slovacchia</option>
+                    <option class="optionFooter">Slovenia</option>
+                    <option class="optionFooter">Spagna</option>
+                    <option class="optionFooter">Svezia</option>
+                    <option class="optionFooter">Svizzera</option>
+                  </select>
+                
+            </div>
+    
+    
+            <div class="containerButtonFooterMobile">
+    
+                <button class="buttonMobile">
+                    <div>
+                        <span class="colorButton">Lingua</span>
+                    </div>
+                    <div class="arrowMobile">
+                        <div>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAA50lEQVR42nWRMQ/BQBSAL0aRdDQzMnVjJWam1iDiV4jE5g+ZLSYSC6vIhSbowFrX3rXVeL0Xjza8fOn0fb17LSvOSt84Jwe4uu75cgT2By4ZQ24aBtJ0MyGSJHnqieKUMAzlYPSwbED1up+gv7CRpw7iOI6iCGylVNBoeqYp6rU/QdaGQVtUqqrT+RGAR7aUMggCtAE4Kh+0562cnQba9srlTAAqAouS7fu+gNF2JhguxxTkbSFAvRtG2pgmxwAvgwhfkP3QgwEAy3A6gZamq1MDL8YP9TmBWQViu9uuVyt8Ilz/YP7mBVsTOUQfESu+AAAAAElFTkSuQmCC" alt="">
+                            <span class="italiaButton">Italia</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </div>
+                </button>
+    
+    
+                <select id="scelta">
+                    <option class="optionFooter">United Stades</option>
+                    <option class="optionFooter">United Kingdom</option>
+                    <option class="optionFooter">Australia</option>
+                    <option class="optionFooter">France</option>
+                    <option class="optionFooter">Deutschland</option>
+                    <option class="optionFooter">Italia</option>
+                    <option class="optionFooter">日本</option>
+                    <option class="optionFooter">Polska</option>
+                    <option class="optionFooter">Brasil</option>
+                    <option class="optionFooter">Россия</option>
+                    <option class="optionFooter">España</option>
+                    <option class="optionFooter">Česká republika</option>
+                    <option class="optionFooter">Canada (En)</option>
+                    <option class="optionFooter">Canada(Fr)</option>
+                    <option class="optionFooter">Danmark</option>
+                    <option class="optionFooter">Suomi</option>
+                    <option class="optionFooter">México</option>
+                    <option class="optionFooter">Nederland</option>
+                    <option class="optionFooter">Norge</option>
+                    <option class="optionFooter">Sverige</option>
+                    <option class="optionFooter">中国</option>
+                    <option class="optionFooter">대한민국</option>
+                    <option class="optionFooter">Türkiye</option>
+                  </select>
+    
+            </div >
+        </div>
+
+
+       
+
+        <div class="conteinerPrivacy">
+            <a class="politicaPrivacy" href="#">Note legali e privacy</a>
+            <a class="politicaPrivacy" href="#">Accordo con l'utente</a> <br>
+            <a class="politicaPrivacy" href="#">Politica sulla privacy e sui cookie(i tuoi diritti sulla
+                privacy)</a> <br>
+            <a class="politicaPrivacy" href="#">Aggiornamenti sui servizi online</a>
+            <a class="politicaPrivacy" href="#">Cookie Preferenze</a>
+
+
+            <div class="copyright">
+                <span>© 2023 Electronic Arts Inc.</span>
+
+                <div class="logoPrivacy">
+                    <img width="150px" src="https://privacy-policy.truste.com/privacy-seal/seal?rid=2593a571-b03b-4951-9a22-c175bd66b351"
+                        alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
     </footer>
+    
 
 
-    <script scr="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
