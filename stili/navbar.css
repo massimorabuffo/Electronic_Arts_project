@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    position: absolute;
     background-color: var(--clr-primary);
     padding-right: 1rem;
     width: 100%;
@@ -72,7 +73,8 @@
     position: absolute;
     box-shadow: 0px 70px 100px -58px rgba(0,0,0,0.3);
     transition: .5s cubic-bezier(.5,.25,.015,1);
-    z-index: 1;
+    z-index: 2;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -123,7 +125,8 @@
     position: absolute;
     box-shadow: 0px 70px 100px -58px rgba(0,0,0,0.3);
     transition: .5s cubic-bezier(.5,.25,.015,1);
-    z-index: 1;
+    z-index: 2;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -182,9 +185,10 @@
 .wrapper{
     display: flex;
     align-items: center;
-    position: sticky;
+    position: relative;
     padding: 0.75rem 0.75rem;
     width: 100%;
+    padding-top: 3.5rem;
 }
 
 .ellipsis{
@@ -262,9 +266,13 @@
 
 #ea_logo{
     position: absolute;
-    top: 28%;
+    top: 29%;
     left: 40%;
     block-size: 5rem;
+}
+
+.games #ea_logo:hover{
+    transform: scale(1.2);
 }
 
 .games{
@@ -311,10 +319,9 @@
     width: 100%;
 }
 
-.fifa_content img#logo_fifa{
-    cursor: pointer;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.fifa_content #logo_fifa:hover{
+    transform: scale(1.2);
+    
 }
 
 .f1{
@@ -342,6 +349,10 @@
     width: 100%;
 }
 
+.f1_content #logo_f1:hover{
+    transform: scale(1.2);
+}
+
 .madden23{
     display: flex;
     justify-content: center;
@@ -365,6 +376,10 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+}
+
+.madden23_content #logo_md:hover{
+    transform: scale(1.2);
 }
 
 .apex{
@@ -392,6 +407,10 @@
     width: 100%;
 }
 
+.apex_content #logo_apex:hover{
+    transform: scale(1.2);
+}
+
 .battlefield{
     display: flex;
     justify-content: center;
@@ -417,6 +436,10 @@
     width: 100%;
 }
 
+.battlefield_content #logo_battlefield:hover{
+    transform: scale(1.2);
+}
+
 .sims{
     display: flex;
     justify-content: center;
@@ -440,6 +463,10 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+}
+
+.sims_content #logo_sims:hover{
+    transform: scale(1.2);
 }
 
 #logo_fifa{
@@ -734,6 +761,7 @@
         outline: none;
         cursor: pointer;
         position: absolute;
+        background: none;
     }
     
     #hamburger-logo{
@@ -745,7 +773,6 @@
     }
     
     .hamburger-section{
-        margin: 2.8rem 0 0 0 ;
         flex-direction: column;
         position: fixed;
         background-color: var(--clr-background-nav);
@@ -768,6 +795,7 @@
         align-items: center;
         background-color: var(--clr-show-div-nav);
         padding: 0 .7rem;
+        margin-top: 2.8rem;
     }
     
     .header svg#close-side{
@@ -879,8 +907,12 @@
 }
     @media screen and (max-width: 425px) {
 
+        .user{
+            z-index: 3;
+        }
+
         .avatar_section{
-            z-index: 2;
+            z-index: 3;
         }
     
         .a_container{
@@ -901,7 +933,7 @@
         }
         
         .question_section{
-            z-index: 2;
+            z-index: 3;
             height: 28rem;
         }
 
@@ -948,6 +980,10 @@
 
         .a_container{
             margin: -4.5rem 0;
+        }
+
+        .hamburger-section{
+            z-index: 2;
         }
 
     }

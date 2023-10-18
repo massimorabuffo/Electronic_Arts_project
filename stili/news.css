@@ -9,7 +9,7 @@ button {
 }
 
 #h3-news {
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .tabs-wrapper {
@@ -258,7 +258,7 @@ button {
         gap: 20px;
         width: 90%;
         margin-top: 56px;
-        display: flex;
+        display: none;
 
     }
 

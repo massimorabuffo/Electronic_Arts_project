@@ -98,7 +98,7 @@
   
       <div class="wrapper">
         <div>
-          <button class="ellipsis" onclick="showSidebar()">
+          <button class="ellipsis" onclick=showSidebar();toggleSidebar()>
             <svg viewBox="0 0 16 16" id="ellipsis">
               <g>
                 <circle cx="14.143" cy="8" r="1.875"></circle>
@@ -475,7 +475,7 @@
           <div class="ac">
             
             <input class="ac-input" id="ac-7" name="ac-7" type="checkbox" />
-            <label class="ac-label" for="ac-7">Risorse<svg
+            <label class="ac-label" id="ac-func" for="ac-7">Risorse<svg
               xmlns="http://www.w3.org/2000/svg"
               height="0.625em"
               viewBox="0 0 512 512"
@@ -515,7 +515,7 @@
                    </div>
                    <div  class="fotobella">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="C:\Users\conte\Desktop\ciao\electronics-art-clone\assets\images\mobile-eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop16x9.320w.jpg"><source media="(max-width: 1023px)" srcset="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop2x1.1023w.jpg"><source media="(max-width: 1455px)" srcset="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop5x2.1455w.jpg"><source media="(min-width: 1456px)" srcset="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop7x2.1920w.jpg"><img class="foto-mobile2" src="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop16x9.320w.jpg" alt="">
+                      <source media="(max-width: 767px)" srcset="C:\Users\Utente\Desktop\Marco\Develhope\EA clone\electronics-art-clone\img-mobile29.jpg"><source media="(max-width: 1023px)" srcset="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop2x1.1023w.jpg"><source media="(max-width: 1455px)" srcset="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop5x2.1455w.jpg"><source media="(min-width: 1456px)" srcset="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop7x2.1920w.jpg"><img class="foto-mobile2" src="https://media.contentapi.ea.com/content/dam/ea/fc/eacom-homepage-takeover/images/2023/09/eacom-fc24-launch-hero-med-xl-7x2.jpg.adapt.crop16x9.320w.jpg" alt="">
                     </picture>
                    </div>
                  </section>
@@ -564,13 +564,15 @@
                      </section>
 
                      <div class="contenitore">
-                     <button class="bottone5"><a class="ciao1234" href="https://www.ea.com/it-it/games">Ultimi giochi</a></button></div>
+                     <button class="bottone5"><a class="ciao1234" href="https://www.ea.com/it-it/games">Ultimi giochi</a></button>
+                     </div>
+                    
        
 
      <!-- Dennis -->
      <section>
         <div class="container-news-h3">
-            <h3 id="h3-news">Ultime Novità</h3>
+            <h2 id="h3-news">Ultime Novità</h2>
         </div>
         <div class="tabs-wrapper">
             <div class="tabs-container">
