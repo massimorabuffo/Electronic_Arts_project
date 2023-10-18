@@ -1,6 +1,6 @@
-
 @import url("./stili/root.css");
 @import url("./stili/navbar.css");
+@import url("./stili/play-section.css");
 @import url("./stili/news.css");
 @import url("./stili/footer.css");
 
@@ -17,4 +17,12 @@ body{
 
 section{
     padding: 5rem, 1.5rem;
+}
+
+#control-section{
+    background-image: url(./assets/images/ea-section-bg-esrb-parents-blue-xl.jpg.adapt.1920w.jpg);
+}
+
+#play-section{
+    background-image: url(./assets/images/hero-medium-console-7x2-xl.jpg.adapt.crop5x2.1455w.jpg);
 }

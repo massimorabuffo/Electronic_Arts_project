@@ -174,4 +174,3 @@ function closeSidebarTablet(){
 }
 
 logoHamburger.addEventListener('click', closeSidebarTablet)
-
