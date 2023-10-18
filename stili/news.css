@@ -131,7 +131,7 @@ button {
     height: 18vw;
 }
 
-img {
+.news-img {
     width: 100%;
     height: 100%;
 }
@@ -169,6 +169,7 @@ img {
 .details-button-container {
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
@@ -285,7 +286,7 @@ img {
         display: none;
     }
 
-    img {
+    .news-img {
         width: 100%;
         height: 100%;
     }
@@ -328,6 +329,7 @@ img {
         width: 100%;
         height: 90px;
         margin-top: 20px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: center;
     }
