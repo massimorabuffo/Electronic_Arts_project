@@ -1,0 +1,423 @@
+.Section-1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .imgSx {
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    margin-left: 5rem;
+    font-family: Electronic Arts Text;
+  
+  
+  
+  }
+  
+  .titolo {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'Electronic Arts Text';
+    font-size: 42px;
+    width: 35rem;
+    font-weight: bold;
+  }
+  
+  .paragrafo {
+    color: white;
+    margin: 1.5rem;
+    text-align: center;
+    font-family: 'Electronic Arts Text';
+    font-size: 17px;
+    width: 31rem;
+    line-height: 1.5;
+  
+  }
+  
+  
+  
+  .ciao123 {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 550;
+  
+  
+  }
+  
+  
+  .bottone {
+    background-color: #07F468;
+    width: 9rem;
+    height: 100px;
+    border: none;
+    border-radius: 5cqb;
+    padding: 15px;
+  
+  }
+  
+  .bottone:hover {
+    display: block;
+    transform: scale(1.05);
+  }
+  
+  
+  
+  
+  .fotobella img {
+    width: 100vw;
+  }
+  
+  
+  .titolo-2 {
+    font-family: 'Electronic Arts Text';
+    font-size: 42px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .sezioneImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: 'Electronic Arts Text';
+  }
+  
+  
+  
+  .card29 {
+    width: 25vw;
+    height: 25vw;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  .nome98 {
+    font-family: 'Electronic Arts Text';
+    font-size: 1rem;
+    color: rgb(72, 72, 72);
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  .img2473 {
+    transition: transform 0.3s ease;
+  }
+  
+  .img2473:hover {
+    transform: translate3d(0%, calc(-25% - 27px), 0);
+  }
+  
+  
+  .card29:nth-child(1) {
+  
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2023/09/ufc-5-keyart.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+  
+  }
+  
+  
+  .card29:nth-child(2) {
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2023/07/fc24.jpeg.adapt.crop1x1.767p.jpeg");
+    background-size: 100% 100%;
+  }
+  
+  
+  .card29:nth-child(3) {
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2023/02/f123-gametile-16x9.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+  
+  }
+  
+  .card29:nth-child(4) {
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2022/10/nfs-unbound-1x1.png.adapt.crop1x1.767p.png");
+    background-size: 100% 100%;
+  
+  }
+  
+  .card29:nth-child(5) {
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2017/01/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+  
+  }
+  
+  .card29:nth-child(6) {
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2019/01/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg");
+    background-size: 100% 100%;
+  
+  }
+  
+  
+  .testo-nasc {
+    top: 10.5rem;
+    left: 7.0rem;
+    opacity: 0;
+    transition: opacity 0.7s;
+    color: white;
+    font-size: 15px;
+    font-family: 'Electronic Arts Text';
+    font-weight: 600;
+    position: absolute;
+  
+  
+  }
+  
+  
+  
+  .card29:hover .testo-nasc {
+    opacity: 1;
+  
+  
+  }
+  
+  .card-content27 {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 25vw;
+    height: 25vw;
+    position: relative;
+  
+  }
+  
+  .card-content27:hover {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-content27 img {
+    width: 20vh;
+    justify-content: center;
+    margin-top: 9rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  
+  
+  .contenitore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  
+  }
+  
+  .bottone5 {
+    border: 2px solid black;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 10rem;
+    height: 3.5rem;
+    text-decoration: none;
+  }
+  
+  .bottone5:hover {
+  
+    transform: scale(1.04);
+  
+  }
+  
+  .ciao1234 {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Electronic Arts Text';
+    font-weight: 600;
+  
+  }
+  
+  
+  
+  
+  .card-content27:hover {
+    transition: background 1.5s;
+    background: linear-gradient(90deg, rgba(22, 17, 68, 0.8), rgba(194, 12, 12, 0.8));
+  
+  }
+  
+  
+  @media screen and (max-width: 1025px) {
+    .sezioneImg {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      padding: 3rem;
+    }
+  
+    .card29 {
+      width: 40vw;
+      height: 40vw;
+    }
+  
+    .card-content27 {
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card-content27 img {
+      padding: 1.5rem;
+  
+    }
+  
+    .imgSx {
+      max-width: 100%;
+  
+  
+      padding: 0;
+  
+    }
+  
+    .titolo {
+      font-size: 40px;
+      width: 20rem;
+    }
+  
+    .paragrafo {
+      font-size: 17px;
+      width: 25rem;
+  
+    }
+  
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sezioneImg {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+      margin: 0;
+  
+  
+    }
+  
+    .card29 {
+      width: 84vw;
+      height: 84vw;
+  
+  
+    }
+  
+    .card-content27 {
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+    }
+  
+    .card-content27 img {
+      width: 45vw;
+      margin-top: 16rem;
+  
+    }
+  
+  
+    .titolo {
+      font-size: 40px;
+      width: 20rem;
+    }
+  
+  
+  
+  
+    .testo-nasc {
+      top: 21rem;
+      left: 17rem;
+      opacity: 0;
+      transition: opacity 0.5s;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 15px;
+      font-family: 'Electronic Arts Text';
+      font-weight: 600;
+  
+  
+    }
+  
+    .titolo-2 {
+      font-family: 'Electronic Arts Text';
+      font-size: 30px;
+      font-weight: bold;
+    }
+  
+    .imgSx {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+      padding: 3rem;
+    }
+  
+    .titolo {
+      width: 100%;
+      font-size: 35px;
+    }
+  
+  
+    .paragrafo {
+      margin: 1rem;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      font-size: 17px;
+    }
+  
+    .bottone {
+      margin-bottom: 3rem;
+      width: 8.5rem;
+      height: 3rem;
+    }
+  
+  
+  }
+  
+  
+  @media screen and (max-width: 635px){
+    .bottone {
+      margin-bottom: 7rem;
+      width: 100%;
+      height: 3rem;
+    }
+  
+    .paragrafo {
+      margin: 0.5rem;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      font-size: 15px;
+    }
+  
+    .titolo{
+        width: 70%;
+        font-size: 30px;
+      
+    }
+  
+    .imgSx img{
+      width: 12rem;
+    }
+  }
+  
+  @media screen and (max-width: 585px){
+  .imgSx{
+    display: none;
+  }
+  }
+  
