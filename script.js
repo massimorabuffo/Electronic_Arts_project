@@ -45,6 +45,8 @@ function chiudiCard() {
     });
 }
 
+//navbar
+
 const avatar = document.getElementById("avatar_section");
 const question = document.getElementById("question_section")
 const sidebar = document.getElementById("sidebar");
