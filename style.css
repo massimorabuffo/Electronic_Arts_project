@@ -1,6 +1,5 @@
-
 @import url("./stili/root.css");
-@import url("./stili/navbar.css");
+@import url('./stili/play-section.css');
 
 *{
     padding: 0;
@@ -11,8 +10,4 @@
 body{
     font-family: 'Electronic Arts Text';
     color: var(--clr-primary)
-}
-
-section{
-    padding: 5rem, 1.5rem;
 }
