@@ -49,7 +49,8 @@ function closeQuestion(){
 questionNav.addEventListener("click", closeQuestion);
 
 function closeSidebarTablet(){
-  hamburger.style.width =  '0'
+  hamburger.style.display = 'none';
+  hamburger.style.width =  '0';
   document.body.style.backgroundColor = 'white';
 }
 

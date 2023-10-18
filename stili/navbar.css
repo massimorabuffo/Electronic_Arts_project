@@ -309,8 +309,6 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    -webkit-transition: -webkit-transform .3;
-    transition: tranform .3;
 }
 
 .fifa_content img#logo_fifa{
@@ -750,7 +748,6 @@
         margin: 2.8rem 0 0 0 ;
         flex-direction: column;
         position: fixed;
-        overflow: hidden;
         background-color: var(--clr-background-nav);
         transition: .5s cubic-bezier(.5,.25,.015,1);
         z-index: 1;
@@ -758,6 +755,11 @@
         left: 0;
         width: 95%;
         height: 100%;
+        overflow-x: hidden;
+    }
+
+    .hamburger-section::-webkit-scrollbar{
+        display: none;
     }
     
     .header{
