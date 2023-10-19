@@ -400,7 +400,7 @@
     }
   }
   
-  /* @media screen and (max-width: 635px){
+   @media screen and (max-width: 635px){
     .bottone {
       margin-bottom: 7rem;
       width: 100%;
@@ -430,5 +430,5 @@
   .imgSx{
     display: none;
   }
-  } */
+  } 
   
