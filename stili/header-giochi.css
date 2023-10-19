@@ -198,7 +198,7 @@
   .card-content27 img {
     width: 20vh;
     justify-content: center;
-    margin-top: 9rem;
+    margin-top: 12.5rem;
     z-index: 1;
     position: relative;
   }
@@ -248,28 +248,9 @@
   
   
   @media screen and (max-width: 1025px) {
-    .sezioneImg {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      padding: 3rem;
-    }
+    
   
-    .card29 {
-      width: 40vw;
-      height: 40vw;
-    }
-  
-    .card-content27 {
-      background-color: rgba(0, 0, 0, 0.4);
-      width: 100%;
-      height: 100%;
-    }
-  
-    .card-content27 img {
-      padding: 1.5rem;
-  
-    }
+    
   
     .imgSx {
       max-width: 100%;
@@ -294,22 +275,22 @@
   }
   
   @media screen and (max-width: 768px) {
-    .sezioneImg {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      align-items: center;
-      margin: 0;
+      .sezioneImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 3rem;
+      }
   
-  
-    }
-  
-    .card29 {
-      width: 84vw;
-      height: 84vw;
-  
-  
-    }
+      .card29 {
+        width: 40vw;
+        height: 40vw;
+      }
+    
+      .card-content27 img {
+        padding: 1.5rem;
+    
+      }
   
     .card-content27 {
       background-color: rgba(0, 0, 0, 0.4);
@@ -318,8 +299,8 @@
     }
   
     .card-content27 img {
-      width: 45vw;
-      margin-top: 16rem;
+      width: 33vw;
+      margin-top: 7rem;
   
     }
   
@@ -387,12 +368,33 @@
 
   @media screen and (max-width: 425px) {
 
+    .sezioneImg {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card29 {
+      width: 40vw;
+      height: 40vw;
+    }
+
+    .imgSx{
+      display: flex;
+      margin: 0;
+      width: 100%;
+      margin-top: 25rem;
+      padding-top: 1rem;
+    }
+
     .container-1{
       height: auto;
     }
 
     .fotobella img{
       height: 100%;
+      block-size: 34rem;
     }
 
     .card-content27 img {
@@ -426,9 +428,9 @@
     }
   }
   
-  @media screen and (max-width: 585px){
+  /* @media screen and (max-width: 585px){
   .imgSx{
     display: none;
   }
-  } 
+  }  */
   
